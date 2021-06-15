@@ -8,4 +8,4 @@
 import SwiftUI
 
 // DATA
-let cities: [City] = Bundle.main.decode("City.json")
+let cities: [City] = Bundle.main.decode("city.json")

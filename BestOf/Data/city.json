@@ -38,7 +38,7 @@
       "Chili Dogs",
       "Vegan"
     ],
-    "attractions": [
+    "attraction": [
       "Amusment Park",
       "Music Venue",
       "Tourist Trap",
@@ -62,7 +62,7 @@
       "Chili Dogs",
       "Vegan"
     ],
-    "attractions": [
+    "attraction": [
       "Amusment Park",
       "Music Venue",
       "Tourist Trap",
@@ -85,11 +85,11 @@
       "NY PHF3",
       "NY PHF4"
     ],
-    "attractions": [
+    "attraction": [
       "NY PHA1",
       "NY PHA2",
       "NY PHA3",
-      "NY PH4",
+      "NY PH4"
     ]
   },
   {
@@ -108,7 +108,7 @@
       "SEA PHF3",
       "SEA PF4"
     ],
-    "attractions": [
+    "attraction": [
       "SEA PHA1",
       "SEA PHA2",
       "SEA PHA3",

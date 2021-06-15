@@ -26,8 +26,6 @@ struct CityListItemView: View {
 }
 
 struct CityListItemView_Previews: PreviewProvider {
-  static let cities: [City] = Bundle.main.decode("City.json")
-  
   static var previews: some View {
     CityListItemView(city: cities[0])
       .previewLayout(.sizeThatFits)

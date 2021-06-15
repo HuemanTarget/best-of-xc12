@@ -20,9 +20,13 @@ struct CityAttractionView: View {
           .bold()
         
         Picker(selection: $attractionSelection, label: Text("Attractions")) {
-          ForEach(city.attraction, id: \.self) {
-            Text($0).tag(attractionSelection)
-          }
+//          ForEach(city.attraction, id: \.self) {
+//            Text($0).tag(attractionSelection)
+//          }
+          Text(city.attraction[0]).tag(0)
+          Text(city.attraction[1]).tag(1)
+          Text(city.attraction[2]).tag(2)
+          Text(city.attraction[3]).tag(3)
         }
         .pickerStyle(SegmentedPickerStyle())
       }

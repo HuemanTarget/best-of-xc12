@@ -26,6 +26,10 @@
 		4E9BB9BF26790EFB005475CF /* DrinkTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9BE26790EFB005475CF /* DrinkTwoView.swift */; };
 		4E9BB9C126790F4B005475CF /* DrinkThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9C026790F4B005475CF /* DrinkThreeView.swift */; };
 		4E9BB9C326790F77005475CF /* DrinkFourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9C226790F77005475CF /* DrinkFourView.swift */; };
+		4E9BB9C62679133C005475CF /* FoodOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9C52679133C005475CF /* FoodOneView.swift */; };
+		4E9BB9C82679137E005475CF /* FoodTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9C72679137E005475CF /* FoodTwoView.swift */; };
+		4E9BB9CA267913A9005475CF /* FoodThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9C9267913A9005475CF /* FoodThreeView.swift */; };
+		4E9BB9CC267913CB005475CF /* FoodFourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9CB267913CB005475CF /* FoodFourView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +54,10 @@
 		4E9BB9BE26790EFB005475CF /* DrinkTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkTwoView.swift; sourceTree = "<group>"; };
 		4E9BB9C026790F4B005475CF /* DrinkThreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkThreeView.swift; sourceTree = "<group>"; };
 		4E9BB9C226790F77005475CF /* DrinkFourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkFourView.swift; sourceTree = "<group>"; };
+		4E9BB9C52679133C005475CF /* FoodOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodOneView.swift; sourceTree = "<group>"; };
+		4E9BB9C72679137E005475CF /* FoodTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTwoView.swift; sourceTree = "<group>"; };
+		4E9BB9C9267913A9005475CF /* FoodThreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodThreeView.swift; sourceTree = "<group>"; };
+		4E9BB9CB267913CB005475CF /* FoodFourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodFourView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,10 +146,8 @@
 				4E9BB9B62678FEAD005475CF /* CityDrinkView.swift */,
 				4E9BB9B82678FEED005475CF /* CityFoodView.swift */,
 				4E9BB9BA2678FF27005475CF /* CityAttractionView.swift */,
-				4E9BB9BC26790E7C005475CF /* DrinkOneView.swift */,
-				4E9BB9BE26790EFB005475CF /* DrinkTwoView.swift */,
-				4E9BB9C026790F4B005475CF /* DrinkThreeView.swift */,
-				4E9BB9C226790F77005475CF /* DrinkFourView.swift */,
+				4E9BB9C4267912B4005475CF /* DrinkViews */,
+				4E9BB9CD267913ED005475CF /* FoodViews */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -168,6 +174,28 @@
 				4E9BB9A82678F33B005475CF /* Constant.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		4E9BB9C4267912B4005475CF /* DrinkViews */ = {
+			isa = PBXGroup;
+			children = (
+				4E9BB9BC26790E7C005475CF /* DrinkOneView.swift */,
+				4E9BB9BE26790EFB005475CF /* DrinkTwoView.swift */,
+				4E9BB9C026790F4B005475CF /* DrinkThreeView.swift */,
+				4E9BB9C226790F77005475CF /* DrinkFourView.swift */,
+			);
+			path = DrinkViews;
+			sourceTree = "<group>";
+		};
+		4E9BB9CD267913ED005475CF /* FoodViews */ = {
+			isa = PBXGroup;
+			children = (
+				4E9BB9C52679133C005475CF /* FoodOneView.swift */,
+				4E9BB9C72679137E005475CF /* FoodTwoView.swift */,
+				4E9BB9C9267913A9005475CF /* FoodThreeView.swift */,
+				4E9BB9CB267913CB005475CF /* FoodFourView.swift */,
+			);
+			path = FoodViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,7 +270,9 @@
 			files = (
 				4E9BB9912678EA9B005475CF /* ContentView.swift in Sources */,
 				4E9BB9B52678FE5F005475CF /* CityTabView.swift in Sources */,
+				4E9BB9C62679133C005475CF /* FoodOneView.swift in Sources */,
 				4E9BB9C126790F4B005475CF /* DrinkThreeView.swift in Sources */,
+				4E9BB9CC267913CB005475CF /* FoodFourView.swift in Sources */,
 				4E9BB9BF26790EFB005475CF /* DrinkTwoView.swift in Sources */,
 				4E9BB9B12678F6FE005475CF /* CityDetailView.swift in Sources */,
 				4E9BB9A42678ED95005475CF /* CodableBundle+Extension.swift in Sources */,
@@ -252,10 +282,12 @@
 				4E9BB9AD2678F509005475CF /* CityListItemView.swift in Sources */,
 				4E9BB9AB2678F369005475CF /* CityModel.swift in Sources */,
 				4E9BB9A92678F33B005475CF /* Constant.swift in Sources */,
+				4E9BB9CA267913A9005475CF /* FoodThreeView.swift in Sources */,
 				4E9BB9B92678FEED005475CF /* CityFoodView.swift in Sources */,
 				4E9BB9C326790F77005475CF /* DrinkFourView.swift in Sources */,
 				4E9BB9AF2678F6AE005475CF /* CityView.swift in Sources */,
 				4E9BB98F2678EA9B005475CF /* BestOfApp.swift in Sources */,
+				4E9BB9C82679137E005475CF /* FoodTwoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

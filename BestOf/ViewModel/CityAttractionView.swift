@@ -10,10 +10,23 @@ import SwiftUI
 struct CityAttractionView: View {
   let city: City
   
+  @State private var attractionSelection = 0
+  
   var body: some View {
     VStack {
-      Text(city.name)
-      Text("Attractions")
+      VStack {
+        Text("\(city.name) Attractions")
+          .font(.title)
+          .bold()
+        
+        Picker(selection: $attractionSelection, label: Text("Attractions")) {
+          ForEach(city.attraction, id: \.self) {
+            Text($0).tag(attractionSelection)
+          }
+        }
+        .pickerStyle(SegmentedPickerStyle())
+      }
+      Spacer()
     }
   }
 }

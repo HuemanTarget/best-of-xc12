@@ -10,7 +10,7 @@ import SwiftUI
 struct CityDrinkView: View {
   let city: City
   
-  @State private var drinkSelection = 0
+  @State private var drinkSelection: Int = 0
   
   var body: some View {
     VStack {

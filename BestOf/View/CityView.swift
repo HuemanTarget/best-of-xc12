@@ -12,7 +12,7 @@ struct CityView: View {
     NavigationView {
       List {
         ForEach(cities) { city in
-          NavigationLink(destination: CityDetailView(city: city)) {
+          NavigationLink(destination: CityTabView(city: city)) {
             CityListItemView(city: city)
           }
         }

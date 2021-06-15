@@ -18,6 +18,10 @@
 		4E9BB9AF2678F6AE005475CF /* CityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9AE2678F6AE005475CF /* CityView.swift */; };
 		4E9BB9B12678F6FE005475CF /* CityDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9B02678F6FE005475CF /* CityDetailView.swift */; };
 		4E9BB9B32678F94D005475CF /* city.json in Resources */ = {isa = PBXBuildFile; fileRef = 4E9BB9B22678F94D005475CF /* city.json */; };
+		4E9BB9B52678FE5F005475CF /* CityTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9B42678FE5F005475CF /* CityTabView.swift */; };
+		4E9BB9B72678FEAD005475CF /* CityDrinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9B62678FEAD005475CF /* CityDrinkView.swift */; };
+		4E9BB9B92678FEED005475CF /* CityFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9B82678FEED005475CF /* CityFoodView.swift */; };
+		4E9BB9BB2678FF27005475CF /* CityAttractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9BA2678FF27005475CF /* CityAttractionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		4E9BB9AE2678F6AE005475CF /* CityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityView.swift; sourceTree = "<group>"; };
 		4E9BB9B02678F6FE005475CF /* CityDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailView.swift; sourceTree = "<group>"; };
 		4E9BB9B22678F94D005475CF /* city.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = city.json; sourceTree = "<group>"; };
+		4E9BB9B42678FE5F005475CF /* CityTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTabView.swift; sourceTree = "<group>"; };
+		4E9BB9B62678FEAD005475CF /* CityDrinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDrinkView.swift; sourceTree = "<group>"; };
+		4E9BB9B82678FEED005475CF /* CityFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityFoodView.swift; sourceTree = "<group>"; };
+		4E9BB9BA2678FF27005475CF /* CityAttractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityAttractionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +126,10 @@
 			children = (
 				4E9BB9AC2678F509005475CF /* CityListItemView.swift */,
 				4E9BB9B02678F6FE005475CF /* CityDetailView.swift */,
+				4E9BB9B42678FE5F005475CF /* CityTabView.swift */,
+				4E9BB9B62678FEAD005475CF /* CityDrinkView.swift */,
+				4E9BB9B82678FEED005475CF /* CityFoodView.swift */,
+				4E9BB9BA2678FF27005475CF /* CityAttractionView.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -217,11 +229,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E9BB9912678EA9B005475CF /* ContentView.swift in Sources */,
+				4E9BB9B52678FE5F005475CF /* CityTabView.swift in Sources */,
 				4E9BB9B12678F6FE005475CF /* CityDetailView.swift in Sources */,
 				4E9BB9A42678ED95005475CF /* CodableBundle+Extension.swift in Sources */,
+				4E9BB9BB2678FF27005475CF /* CityAttractionView.swift in Sources */,
+				4E9BB9B72678FEAD005475CF /* CityDrinkView.swift in Sources */,
 				4E9BB9AD2678F509005475CF /* CityListItemView.swift in Sources */,
 				4E9BB9AB2678F369005475CF /* CityModel.swift in Sources */,
 				4E9BB9A92678F33B005475CF /* Constant.swift in Sources */,
+				4E9BB9B92678FEED005475CF /* CityFoodView.swift in Sources */,
 				4E9BB9AF2678F6AE005475CF /* CityView.swift in Sources */,
 				4E9BB98F2678EA9B005475CF /* BestOfApp.swift in Sources */,
 			);

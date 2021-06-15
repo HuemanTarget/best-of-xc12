@@ -11,10 +11,12 @@ struct CityListItemView: View {
   let city: City
   
   var body: some View {
-    VStack {
+    VStack (alignment: .leading, spacing: 5) {
       Text(city.name)
         .font(.title2)
         .fontWeight(.heavy)
+        .multilineTextAlignment(.leading)
+
       
       Text(city.about)
         .font(.footnote)
@@ -22,6 +24,7 @@ struct CityListItemView: View {
         .lineLimit(2)
         .padding(.trailing, 8)
     }
+    .padding(.bottom, 10)
   }
 }
 

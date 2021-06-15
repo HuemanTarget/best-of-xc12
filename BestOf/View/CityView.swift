@@ -10,11 +10,15 @@ import SwiftUI
 struct CityView: View {
   var body: some View {
     NavigationView {
-      VStack {
+      List {
         ForEach(cities) { city in
-          CityListItemView(city: city)
+          NavigationLink(destination: CityDetailView(city: city)) {
+            CityListItemView(city: city)
+          }
         }
       }
+      .listStyle(PlainListStyle())
+      .navigationTitle("Cities")
     }
   }
 }

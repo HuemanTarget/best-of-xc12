@@ -1,0 +1,118 @@
+[
+  {
+    "id": "nola",
+    "name": "New Orleans",
+    "about": "New Orleans is world-renowned for its distinctive music, Creole cuisine, unique dialects, and its annual celebrations and festivals, most notably Mardi Gras.",
+    "drink": [
+      "Sazerac",
+      "Hurricane",
+      "Pimms Cup",
+      "Dive Bar"
+    ],
+    "food": [
+      "Gumbo",
+      "Oysters",
+      "Shrimp & Grits",
+      "Muffaletta"
+    ],
+    "attraction": [
+      "Tours",
+      "Jazz Clubs",
+      "Museums",
+      "Parade Krewe"
+    ]
+  },
+  {
+    "id": "la",
+    "name": "Los Angeles",
+    "about": "Los Angeles is renowned for its beaches, traffic, amusement parks, Hollywood, and chill lifestyle.",
+    "drink": [
+      "Moscow Mule",
+      "The Zombie",
+      "Lounge",
+      "Dive Bar"
+    ],
+    "food": [
+      "Tacos",
+      "Burgers",
+      "Chili Dogs",
+      "Vegan"
+    ],
+    "attractions": [
+      "Amusment Park",
+      "Music Venue",
+      "Tourist Trap",
+      "Celebrity Spot",
+      "Tour"
+    ]
+  },
+  {
+    "id": "chicago",
+    "name": "Chicago",
+    "about": "Los Angeles is renowned for its beaches, traffic, amusement parks, Hollywood, and chill lifestyle.",
+    "drink": [
+      "Moscow Mule",
+      "The Zombie",
+      "Lounge",
+      "Dive Bar"
+    ],
+    "food": [
+      "Tacos",
+      "Burgers",
+      "Chili Dogs",
+      "Vegan"
+    ],
+    "attractions": [
+      "Amusment Park",
+      "Music Venue",
+      "Tourist Trap",
+      "Tour"
+    ]
+  },
+  {
+    "id": "ny",
+    "name": "New York",
+    "about": "New York is renowned for its beaches, traffic, amusement parks, Hollywood, and chill lifestyle.",
+    "drink": [
+      "NY PH1",
+      "NY PH2",
+      "NY PH3",
+      "NY PH4"
+    ],
+    "food": [
+      "NY PHF1",
+      "NY PHF2",
+      "NY PHF3",
+      "NY PHF4"
+    ],
+    "attractions": [
+      "NY PHA1",
+      "NY PHA2",
+      "NY PHA3",
+      "NY PH4",
+    ]
+  },
+  {
+    "id": "seattle",
+    "name": "Seattle",
+    "about": "Seattle is renowned for its beaches, traffic, amusement parks, Hollywood, and chill lifestyle.",
+    "drink": [
+      "SEA PH1",
+      "SEA PH2",
+      "SEA PH3",
+      "SEA PH4"
+    ],
+    "food": [
+      "SEA PHF1",
+      "SEA PHF2",
+      "SEA PHF3",
+      "SEA PF4"
+    ],
+    "attractions": [
+      "SEA PHA1",
+      "SEA PHA2",
+      "SEA PHA3",
+      "SEA PHA4"
+    ]
+  }
+]

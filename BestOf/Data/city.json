@@ -7,6 +7,7 @@
     "color": [
       "ChicagoWhite",
       "NOLARed",
+      "ChicagoWhite",
       "NOLAGold"
     ],
     "drink": [
@@ -36,6 +37,7 @@
     "color": [
       "ChicagoWhite",
       "LAGreen",
+      "ChicagoWhite",
       "LARed"
     ],
     "drink": [
@@ -65,8 +67,9 @@
     "image": "chicago",
     "color": [
       "ChicagoWhite",
-      "ChicagoRed",
-      "ChicagoBlue"
+      "ChicagoBlue",
+      "ChicagoWhite",
+      "ChicagoRed"
     ],
     "drink": [
       "Moscow Mule",
@@ -95,6 +98,7 @@
     "color": [
       "ChicagoWhite",
       "NYOrange",
+      "ChicagoWhite",
       "NYBlue"
     ],
     "drink": [
@@ -124,7 +128,8 @@
     "color": [
       "ChicagoWhite",
       "SeaBlue",
-      "ChicagoWhite"
+      "ChicagoWhite",
+      "SeaBlue"
     ],
     "drink": [
       "SEA PH1",

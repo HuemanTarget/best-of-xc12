@@ -24,6 +24,7 @@ struct CityListItemView: View {
           .foregroundColor(Color(city.color[2]))
           .font(.title2)
           .fontWeight(.heavy)
+          .glowBorder(color: Color(city.color[3]), lineWidth: 2)
           .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.15), radius: 2, x: 2, y: 2)
           .multilineTextAlignment(.leading)
 
@@ -33,6 +34,7 @@ struct CityListItemView: View {
           .font(.footnote)
           .multilineTextAlignment(.leading)
           .lineLimit(2)
+          .glowBorder(color: Color(city.color[3]), lineWidth: 1)
           .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.15), radius: 2, x: 2, y: 2)
           .padding(.trailing, 8)
       }
@@ -47,7 +49,7 @@ struct CityListItemView: View {
 
 struct CityListItemView_Previews: PreviewProvider {
   static var previews: some View {
-    CityListItemView(city: cities[4])
+    CityListItemView(city: cities[0])
       .previewLayout(.sizeThatFits)
       .padding()
   }

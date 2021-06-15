@@ -11,20 +11,28 @@ struct CityListItemView: View {
   let city: City
   
   var body: some View {
-    VStack (alignment: .leading, spacing: 5) {
-      Text(city.name)
-        .font(.title2)
-        .fontWeight(.heavy)
-        .multilineTextAlignment(.leading)
-
+    HStack(alignment: .center, spacing: 16) {
+      Image(city.image)
+        .resizable()
+        .scaledToFit()
+        .frame(width: 90, height: 90)
+        .clipShape(RoundedRectangle(cornerRadius: 12))
       
-      Text(city.about)
-        .font(.footnote)
-        .multilineTextAlignment(.leading)
-        .lineLimit(2)
-        .padding(.trailing, 8)
+      VStack (alignment: .leading, spacing: 5) {
+        Text(city.name)
+          .font(.title2)
+          .fontWeight(.heavy)
+          .multilineTextAlignment(.leading)
+
+        
+        Text(city.about)
+          .font(.footnote)
+          .multilineTextAlignment(.leading)
+          .lineLimit(2)
+          .padding(.trailing, 8)
+      }
     }
-    .padding(.bottom, 10)
+    .padding(.top, 10)
   }
 }
 

@@ -38,6 +38,10 @@
 		4E9BB9DA26791DB4005475CF /* AddDrinkTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9D926791DB4005475CF /* AddDrinkTwoView.swift */; };
 		4E9BB9DC26791DC0005475CF /* AddDrinkThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9DB26791DC0005475CF /* AddDrinkThreeView.swift */; };
 		4E9BB9DE26791DCD005475CF /* AddDrinkFourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9DD26791DCD005475CF /* AddDrinkFourView.swift */; };
+		4E9BB9E026791FAB005475CF /* AddFoodOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9DF26791FAB005475CF /* AddFoodOneView.swift */; };
+		4E9BB9E226791FC7005475CF /* AddFoodTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9E126791FC7005475CF /* AddFoodTwoView.swift */; };
+		4E9BB9E426791FD6005475CF /* AddFoodThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9E326791FD6005475CF /* AddFoodThreeView.swift */; };
+		4E9BB9E626791FE6005475CF /* AddFoodFourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9E526791FE6005475CF /* AddFoodFourView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +78,10 @@
 		4E9BB9D926791DB4005475CF /* AddDrinkTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDrinkTwoView.swift; sourceTree = "<group>"; };
 		4E9BB9DB26791DC0005475CF /* AddDrinkThreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDrinkThreeView.swift; sourceTree = "<group>"; };
 		4E9BB9DD26791DCD005475CF /* AddDrinkFourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDrinkFourView.swift; sourceTree = "<group>"; };
+		4E9BB9DF26791FAB005475CF /* AddFoodOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodOneView.swift; sourceTree = "<group>"; };
+		4E9BB9E126791FC7005475CF /* AddFoodTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodTwoView.swift; sourceTree = "<group>"; };
+		4E9BB9E326791FD6005475CF /* AddFoodThreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodThreeView.swift; sourceTree = "<group>"; };
+		4E9BB9E526791FE6005475CF /* AddFoodFourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodFourView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +223,10 @@
 				4E9BB9C72679137E005475CF /* FoodTwoView.swift */,
 				4E9BB9C9267913A9005475CF /* FoodThreeView.swift */,
 				4E9BB9CB267913CB005475CF /* FoodFourView.swift */,
+				4E9BB9DF26791FAB005475CF /* AddFoodOneView.swift */,
+				4E9BB9E126791FC7005475CF /* AddFoodTwoView.swift */,
+				4E9BB9E326791FD6005475CF /* AddFoodThreeView.swift */,
+				4E9BB9E526791FE6005475CF /* AddFoodFourView.swift */,
 			);
 			path = FoodViews;
 			sourceTree = "<group>";
@@ -305,6 +317,7 @@
 				4E9BB9912678EA9B005475CF /* ContentView.swift in Sources */,
 				4E9BB9D826791B46005475CF /* AddDrinkOneView.swift in Sources */,
 				4E9BB9B52678FE5F005475CF /* CityTabView.swift in Sources */,
+				4E9BB9E026791FAB005475CF /* AddFoodOneView.swift in Sources */,
 				4E9BB9DE26791DCD005475CF /* AddDrinkFourView.swift in Sources */,
 				4E9BB9C62679133C005475CF /* FoodOneView.swift in Sources */,
 				4E9BB9C126790F4B005475CF /* DrinkThreeView.swift in Sources */,
@@ -323,11 +336,14 @@
 				4E9BB9CA267913A9005475CF /* FoodThreeView.swift in Sources */,
 				4E9BB9B92678FEED005475CF /* CityFoodView.swift in Sources */,
 				4E9BB9C326790F77005475CF /* DrinkFourView.swift in Sources */,
+				4E9BB9E626791FE6005475CF /* AddFoodFourView.swift in Sources */,
 				4E9BB9D326791514005475CF /* AttractionThreeView.swift in Sources */,
 				4E9BB9AF2678F6AE005475CF /* CityView.swift in Sources */,
 				4E9BB9CF267914C2005475CF /* AttractionOneView.swift in Sources */,
 				4E9BB98F2678EA9B005475CF /* BestOfApp.swift in Sources */,
 				4E9BB9C82679137E005475CF /* FoodTwoView.swift in Sources */,
+				4E9BB9E426791FD6005475CF /* AddFoodThreeView.swift in Sources */,
+				4E9BB9E226791FC7005475CF /* AddFoodTwoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

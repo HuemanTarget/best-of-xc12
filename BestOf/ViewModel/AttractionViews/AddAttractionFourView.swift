@@ -1,5 +1,5 @@
 //
-//  AddDrinkThreeView.swift
+//  AddAttractionFourView.swift
 //  BestOf
 //
 //  Created by Joshua Basche on 6/15/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AddDrinkThreeView: View {
+struct AddAttractionFourView: View {
   let city: City
   @Environment(\.presentationMode) var presentationMode
   
@@ -28,7 +28,7 @@ struct AddDrinkThreeView: View {
           Button(action: {
             presentationMode.wrappedValue.dismiss()
           }) {
-            Text("Add New \(city.drink[2])")
+            Text("Add New \(city.attraction[3])")
           }
           
           Spacer()
@@ -38,8 +38,8 @@ struct AddDrinkThreeView: View {
   }
 }
 
-struct AddDrinkThreeView_Previews: PreviewProvider {
+struct AddAttractionFourView_Previews: PreviewProvider {
   static var previews: some View {
-    AddDrinkThreeView(city: cities[0])
+    AddAttractionFourView(city: cities[0])
   }
 }

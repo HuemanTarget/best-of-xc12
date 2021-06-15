@@ -42,6 +42,10 @@
 		4E9BB9E226791FC7005475CF /* AddFoodTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9E126791FC7005475CF /* AddFoodTwoView.swift */; };
 		4E9BB9E426791FD6005475CF /* AddFoodThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9E326791FD6005475CF /* AddFoodThreeView.swift */; };
 		4E9BB9E626791FE6005475CF /* AddFoodFourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9E526791FE6005475CF /* AddFoodFourView.swift */; };
+		4E9BB9E826792120005475CF /* AddAttractionOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9E726792120005475CF /* AddAttractionOneView.swift */; };
+		4E9BB9EA2679214A005475CF /* AddAttractionTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9E92679214A005475CF /* AddAttractionTwoView.swift */; };
+		4E9BB9EC2679215D005475CF /* AddAttractionThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9EB2679215D005475CF /* AddAttractionThreeView.swift */; };
+		4E9BB9EE26792172005475CF /* AddAttractionFourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9ED26792172005475CF /* AddAttractionFourView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +86,10 @@
 		4E9BB9E126791FC7005475CF /* AddFoodTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodTwoView.swift; sourceTree = "<group>"; };
 		4E9BB9E326791FD6005475CF /* AddFoodThreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodThreeView.swift; sourceTree = "<group>"; };
 		4E9BB9E526791FE6005475CF /* AddFoodFourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodFourView.swift; sourceTree = "<group>"; };
+		4E9BB9E726792120005475CF /* AddAttractionOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAttractionOneView.swift; sourceTree = "<group>"; };
+		4E9BB9E92679214A005475CF /* AddAttractionTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAttractionTwoView.swift; sourceTree = "<group>"; };
+		4E9BB9EB2679215D005475CF /* AddAttractionThreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAttractionThreeView.swift; sourceTree = "<group>"; };
+		4E9BB9ED26792172005475CF /* AddAttractionFourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAttractionFourView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +246,10 @@
 				4E9BB9D0267914EE005475CF /* AttractionTwoView.swift */,
 				4E9BB9D226791514005475CF /* AttractionThreeView.swift */,
 				4E9BB9D42679154D005475CF /* AttractionFourView.swift */,
+				4E9BB9E726792120005475CF /* AddAttractionOneView.swift */,
+				4E9BB9E92679214A005475CF /* AddAttractionTwoView.swift */,
+				4E9BB9EB2679215D005475CF /* AddAttractionThreeView.swift */,
+				4E9BB9ED26792172005475CF /* AddAttractionFourView.swift */,
 			);
 			path = AttractionViews;
 			sourceTree = "<group>";
@@ -313,10 +325,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E9BB9DA26791DB4005475CF /* AddDrinkTwoView.swift in Sources */,
+				4E9BB9E826792120005475CF /* AddAttractionOneView.swift in Sources */,
 				4E9BB9D1267914EE005475CF /* AttractionTwoView.swift in Sources */,
 				4E9BB9912678EA9B005475CF /* ContentView.swift in Sources */,
 				4E9BB9D826791B46005475CF /* AddDrinkOneView.swift in Sources */,
 				4E9BB9B52678FE5F005475CF /* CityTabView.swift in Sources */,
+				4E9BB9EA2679214A005475CF /* AddAttractionTwoView.swift in Sources */,
 				4E9BB9E026791FAB005475CF /* AddFoodOneView.swift in Sources */,
 				4E9BB9DE26791DCD005475CF /* AddDrinkFourView.swift in Sources */,
 				4E9BB9C62679133C005475CF /* FoodOneView.swift in Sources */,
@@ -329,11 +343,13 @@
 				4E9BB9BD26790E7C005475CF /* DrinkOneView.swift in Sources */,
 				4E9BB9BB2678FF27005475CF /* CityAttractionView.swift in Sources */,
 				4E9BB9D52679154D005475CF /* AttractionFourView.swift in Sources */,
+				4E9BB9EE26792172005475CF /* AddAttractionFourView.swift in Sources */,
 				4E9BB9B72678FEAD005475CF /* CityDrinkView.swift in Sources */,
 				4E9BB9AD2678F509005475CF /* CityListItemView.swift in Sources */,
 				4E9BB9AB2678F369005475CF /* CityModel.swift in Sources */,
 				4E9BB9A92678F33B005475CF /* Constant.swift in Sources */,
 				4E9BB9CA267913A9005475CF /* FoodThreeView.swift in Sources */,
+				4E9BB9EC2679215D005475CF /* AddAttractionThreeView.swift in Sources */,
 				4E9BB9B92678FEED005475CF /* CityFoodView.swift in Sources */,
 				4E9BB9C326790F77005475CF /* DrinkFourView.swift in Sources */,
 				4E9BB9E626791FE6005475CF /* AddFoodFourView.swift in Sources */,

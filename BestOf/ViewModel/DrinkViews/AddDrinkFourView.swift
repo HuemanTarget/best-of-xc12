@@ -8,13 +8,38 @@
 import SwiftUI
 
 struct AddDrinkFourView: View {
-    var body: some View {
-        Text("Drink Four")
+  let city: City
+  @Environment(\.presentationMode) var presentationMode
+  
+  @State private var name: String = ""
+  @State private var address: String = ""
+  
+  var body: some View {
+    VStack {
+      Form {
+        TextField("Location Name", text: $name)
+          .textFieldStyle(PlainTextFieldStyle())
+        TextField("Location Name", text: $address)
+          .textFieldStyle(PlainTextFieldStyle())
+        
+        HStack {
+          Spacer()
+          
+          Button(action: {
+            presentationMode.wrappedValue.dismiss()
+          }) {
+            Text("Add New \(city.drink[3])")
+          }
+          
+          Spacer()
+        }
+      }
     }
+  }
 }
 
 struct AddDrinkFourView_Previews: PreviewProvider {
-    static var previews: some View {
-        AddDrinkFourView()
-    }
+  static var previews: some View {
+    AddDrinkFourView(city: cities[0])
+  }
 }

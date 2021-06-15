@@ -42,7 +42,7 @@ struct FoodThreeView: View {
         )
       }
       .sheet(isPresented: $showingAddFoodThreeView) {
-        AddFoodThreeView()
+        AddFoodThreeView(city: city)
       }
     }
   }

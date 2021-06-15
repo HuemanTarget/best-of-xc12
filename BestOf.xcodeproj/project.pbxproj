@@ -22,6 +22,10 @@
 		4E9BB9B72678FEAD005475CF /* CityDrinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9B62678FEAD005475CF /* CityDrinkView.swift */; };
 		4E9BB9B92678FEED005475CF /* CityFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9B82678FEED005475CF /* CityFoodView.swift */; };
 		4E9BB9BB2678FF27005475CF /* CityAttractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9BA2678FF27005475CF /* CityAttractionView.swift */; };
+		4E9BB9BD26790E7C005475CF /* DrinkOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9BC26790E7C005475CF /* DrinkOneView.swift */; };
+		4E9BB9BF26790EFB005475CF /* DrinkTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9BE26790EFB005475CF /* DrinkTwoView.swift */; };
+		4E9BB9C126790F4B005475CF /* DrinkThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9C026790F4B005475CF /* DrinkThreeView.swift */; };
+		4E9BB9C326790F77005475CF /* DrinkFourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9C226790F77005475CF /* DrinkFourView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,10 @@
 		4E9BB9B62678FEAD005475CF /* CityDrinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDrinkView.swift; sourceTree = "<group>"; };
 		4E9BB9B82678FEED005475CF /* CityFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityFoodView.swift; sourceTree = "<group>"; };
 		4E9BB9BA2678FF27005475CF /* CityAttractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityAttractionView.swift; sourceTree = "<group>"; };
+		4E9BB9BC26790E7C005475CF /* DrinkOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkOneView.swift; sourceTree = "<group>"; };
+		4E9BB9BE26790EFB005475CF /* DrinkTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkTwoView.swift; sourceTree = "<group>"; };
+		4E9BB9C026790F4B005475CF /* DrinkThreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkThreeView.swift; sourceTree = "<group>"; };
+		4E9BB9C226790F77005475CF /* DrinkFourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkFourView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +138,10 @@
 				4E9BB9B62678FEAD005475CF /* CityDrinkView.swift */,
 				4E9BB9B82678FEED005475CF /* CityFoodView.swift */,
 				4E9BB9BA2678FF27005475CF /* CityAttractionView.swift */,
+				4E9BB9BC26790E7C005475CF /* DrinkOneView.swift */,
+				4E9BB9BE26790EFB005475CF /* DrinkTwoView.swift */,
+				4E9BB9C026790F4B005475CF /* DrinkThreeView.swift */,
+				4E9BB9C226790F77005475CF /* DrinkFourView.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -230,14 +242,18 @@
 			files = (
 				4E9BB9912678EA9B005475CF /* ContentView.swift in Sources */,
 				4E9BB9B52678FE5F005475CF /* CityTabView.swift in Sources */,
+				4E9BB9C126790F4B005475CF /* DrinkThreeView.swift in Sources */,
+				4E9BB9BF26790EFB005475CF /* DrinkTwoView.swift in Sources */,
 				4E9BB9B12678F6FE005475CF /* CityDetailView.swift in Sources */,
 				4E9BB9A42678ED95005475CF /* CodableBundle+Extension.swift in Sources */,
+				4E9BB9BD26790E7C005475CF /* DrinkOneView.swift in Sources */,
 				4E9BB9BB2678FF27005475CF /* CityAttractionView.swift in Sources */,
 				4E9BB9B72678FEAD005475CF /* CityDrinkView.swift in Sources */,
 				4E9BB9AD2678F509005475CF /* CityListItemView.swift in Sources */,
 				4E9BB9AB2678F369005475CF /* CityModel.swift in Sources */,
 				4E9BB9A92678F33B005475CF /* Constant.swift in Sources */,
 				4E9BB9B92678FEED005475CF /* CityFoodView.swift in Sources */,
+				4E9BB9C326790F77005475CF /* DrinkFourView.swift in Sources */,
 				4E9BB9AF2678F6AE005475CF /* CityView.swift in Sources */,
 				4E9BB98F2678EA9B005475CF /* BestOfApp.swift in Sources */,
 			);

@@ -4,6 +4,11 @@
     "name": "New Orleans",
     "about": "New Orleans is world-renowned for its distinctive music, Creole cuisine, unique dialects, and its annual celebrations and festivals, most notably Mardi Gras.",
     "image": "new-orleans",
+    "color": [
+      "ChicagoWhite",
+      "NOLARed",
+      "NOLAGold"
+    ],
     "drink": [
       "Sazerac",
       "Hurricane",
@@ -28,6 +33,11 @@
     "name": "Los Angeles",
     "about": "Los Angeles is renowned for its beaches, traffic, amusement parks, Hollywood, and chill lifestyle.",
     "image": "los-angeles",
+    "color": [
+      "ChicagoWhite",
+      "LAGreen",
+      "LARed"
+    ],
     "drink": [
       "Moscow Mule",
       "The Zombie",
@@ -53,6 +63,11 @@
     "name": "Chicago",
     "about": "Los Angeles is renowned for its beaches, traffic, amusement parks, Hollywood, and chill lifestyle.",
     "image": "chicago",
+    "color": [
+      "ChicagoWhite",
+      "ChicagoRed",
+      "ChicagoBlue"
+    ],
     "drink": [
       "Moscow Mule",
       "The Zombie",
@@ -77,6 +92,11 @@
     "name": "New York",
     "about": "New York is renowned for its beaches, traffic, amusement parks, Hollywood, and chill lifestyle.",
     "image": "new-york",
+    "color": [
+      "ChicagoWhite",
+      "NYOrange",
+      "NYBlue"
+    ],
     "drink": [
       "NY PH1",
       "NY PH2",
@@ -101,6 +121,11 @@
     "name": "Seattle",
     "about": "Seattle is renowned for its beaches, traffic, amusement parks, Hollywood, and chill lifestyle.",
     "image": "seattle",
+    "color": [
+      "ChicagoWhite",
+      "SeaBlue",
+      "ChicagoWhite"
+    ],
     "drink": [
       "SEA PH1",
       "SEA PH2",

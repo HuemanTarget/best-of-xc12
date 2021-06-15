@@ -15,4 +15,5 @@ struct City: Codable, Identifiable {
   let drink: [String]
   let food: [String]
   let attraction: [String]
+  let color: [String]
 }

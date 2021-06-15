@@ -31,6 +31,7 @@ struct CityDrinkView: View {
         .pickerStyle(SegmentedPickerStyle())
       }
       
+      
       if drinkSelection == 0 {
         DrinkOneView(city: city)
       } else if drinkSelection == 1 {
@@ -43,6 +44,7 @@ struct CityDrinkView: View {
       
       Spacer()
     }
+    
   }
 }
 

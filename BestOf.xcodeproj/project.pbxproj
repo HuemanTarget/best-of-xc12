@@ -46,6 +46,7 @@
 		4E9BB9EA2679214A005475CF /* AddAttractionTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9E92679214A005475CF /* AddAttractionTwoView.swift */; };
 		4E9BB9EC2679215D005475CF /* AddAttractionThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9EB2679215D005475CF /* AddAttractionThreeView.swift */; };
 		4E9BB9EE26792172005475CF /* AddAttractionFourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9ED26792172005475CF /* AddAttractionFourView.swift */; };
+		4E9BB9F0267951CA005475CF /* GlowBorder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9EF267951CA005475CF /* GlowBorder+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		4E9BB9E92679214A005475CF /* AddAttractionTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAttractionTwoView.swift; sourceTree = "<group>"; };
 		4E9BB9EB2679215D005475CF /* AddAttractionThreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAttractionThreeView.swift; sourceTree = "<group>"; };
 		4E9BB9ED26792172005475CF /* AddAttractionFourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAttractionFourView.swift; sourceTree = "<group>"; };
+		4E9BB9EF267951CA005475CF /* GlowBorder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GlowBorder+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				4E9BB9A32678ED95005475CF /* CodableBundle+Extension.swift */,
+				4E9BB9EF267951CA005475CF /* GlowBorder+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				4E9BB9E626791FE6005475CF /* AddFoodFourView.swift in Sources */,
 				4E9BB9D326791514005475CF /* AttractionThreeView.swift in Sources */,
 				4E9BB9AF2678F6AE005475CF /* CityView.swift in Sources */,
+				4E9BB9F0267951CA005475CF /* GlowBorder+Extension.swift in Sources */,
 				4E9BB9CF267914C2005475CF /* AttractionOneView.swift in Sources */,
 				4E9BB98F2678EA9B005475CF /* BestOfApp.swift in Sources */,
 				4E9BB9C82679137E005475CF /* FoodTwoView.swift in Sources */,

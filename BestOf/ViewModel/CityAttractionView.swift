@@ -30,6 +30,17 @@ struct CityAttractionView: View {
         }
         .pickerStyle(SegmentedPickerStyle())
       }
+      
+      if attractionSelection == 0 {
+        AttractionOneView(city: city)
+      } else if attractionSelection == 1 {
+        AttractionTwoView(city: city)
+      } else if attractionSelection == 2 {
+        AttractionThreeView(city: city)
+      } else {
+        AttractionFourView(city: city)
+      }
+      
       Spacer()
     }
   }

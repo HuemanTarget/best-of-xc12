@@ -10,14 +10,40 @@ import SwiftUI
 struct DrinkFourView: View {
   let city: City
   
+  @State private var showingAddDrinkFourView: Bool = false
+  
   var body: some View {
-    Text("Best \(city.drink[3]) in \(city.name)")
-      .font(.title2)
-  }
-}
-
-struct DrinkFourView_Previews: PreviewProvider {
-  static var previews: some View {
-    DrinkFourView(city: cities[0])
+    NavigationView {
+      ZStack {
+        VStack {
+//          Text("Best \(city.drink[0]) in \(city.name)")
+//            .font(.title2)
+          
+          List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
+            Text("Drink \(item)")
+          }
+          .listStyle(PlainListStyle())
+        }
+        .navigationBarTitle("Best \(city.drink[3])")
+//        .navigationBarHidden(true)
+        .navigationBarItems(trailing:
+                              HStack {
+                                Button(action: {
+                                  self.showingAddDrinkFourView = true
+                                }) {
+                                  HStack {
+                                    Text("Add \(city.drink[3])")
+                                      .foregroundColor(.black)
+                                    //                                Image(systemName: "plus")
+                                    //                                  .foregroundColor(.black)
+                                  }
+                                }
+                              }
+        )
+      }
+      .sheet(isPresented: $showingAddDrinkFourView) {
+        AddDrinkFourView()
+      }
+    }
   }
 }

@@ -11,21 +11,23 @@ struct CityTabView: View {
   let city: City
   
   var body: some View {
-    TabView {
-      CityDrinkView(city: city)
-        .tabItem {
-          Label("Drinks", systemImage: "xmark")
-        }
-      
-      CityFoodView(city: city)
-        .tabItem {
-          Label("Food", systemImage: "xmark")
-        }
-      
-      CityAttractionView(city: city)
-        .tabItem {
-          Label("Attarctions", systemImage: "xmark")
-        }
+    ZStack {
+      TabView {
+        CityDrinkView(city: city)
+          .tabItem {
+            Label("Drinks", systemImage: "xmark")
+          }
+            
+        CityFoodView(city: city)
+          .tabItem {
+            Label("Food", systemImage: "xmark")
+          }
+        
+        CityAttractionView(city: city)
+          .tabItem {
+            Label("Attarctions", systemImage: "xmark")
+          }
+      }
     }
   }
 }

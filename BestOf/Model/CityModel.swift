@@ -11,6 +11,7 @@ struct City: Codable, Identifiable {
   let id: String
   let name: String
   let about: String
+  let image: String
   let drink: [String]
   let food: [String]
   let attraction: [String]

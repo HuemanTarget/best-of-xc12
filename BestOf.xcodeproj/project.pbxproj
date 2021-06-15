@@ -11,6 +11,7 @@
 		4E9BB9912678EA9B005475CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9902678EA9B005475CF /* ContentView.swift */; };
 		4E9BB9932678EA9C005475CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E9BB9922678EA9C005475CF /* Assets.xcassets */; };
 		4E9BB9962678EA9C005475CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E9BB9952678EA9C005475CF /* Preview Assets.xcassets */; };
+		4E9BB9A42678ED95005475CF /* CodableBundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BB9A32678ED95005475CF /* CodableBundle+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		4E9BB9922678EA9C005475CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E9BB9952678EA9C005475CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4E9BB9972678EA9C005475CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E9BB9A32678ED95005475CF /* CodableBundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CodableBundle+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +54,12 @@
 		4E9BB98D2678EA9B005475CF /* BestOf */ = {
 			isa = PBXGroup;
 			children = (
-				4E9BB98E2678EA9B005475CF /* BestOfApp.swift */,
-				4E9BB9902678EA9B005475CF /* ContentView.swift */,
+				4E9BB9A22678ED7B005475CF /* Extension */,
+				4E9BB99F2678EBBD005475CF /* App */,
+				4E9BB99E2678EB7E005475CF /* Data */,
+				4E9BB99D2678EAEE005475CF /* Model */,
+				4E9BB9A02678EBC4005475CF /* ViewModel */,
+				4E9BB9A12678EBCB005475CF /* View */,
 				4E9BB9922678EA9C005475CF /* Assets.xcassets */,
 				4E9BB9972678EA9C005475CF /* Info.plist */,
 				4E9BB9942678EA9C005475CF /* Preview Content */,
@@ -67,6 +73,51 @@
 				4E9BB9952678EA9C005475CF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4E9BB99D2678EAEE005475CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4E9BB99E2678EB7E005475CF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4E9BB99F2678EBBD005475CF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4E9BB98E2678EA9B005475CF /* BestOfApp.swift */,
+				4E9BB9902678EA9B005475CF /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4E9BB9A02678EBC4005475CF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4E9BB9A12678EBCB005475CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4E9BB9A22678ED7B005475CF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4E9BB9A32678ED95005475CF /* CodableBundle+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E9BB9912678EA9B005475CF /* ContentView.swift in Sources */,
+				4E9BB9A42678ED95005475CF /* CodableBundle+Extension.swift in Sources */,
 				4E9BB98F2678EA9B005475CF /* BestOfApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

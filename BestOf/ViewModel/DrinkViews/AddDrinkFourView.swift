@@ -6,13 +6,27 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseFirestoreSwift
 
 struct AddDrinkFourView: View {
   let city: City
+  let db = Firestore.firestore()
+  
   @Environment(\.presentationMode) var presentationMode
   
   @State private var name: String = ""
   @State private var address: String = ""
+  
+  func save(location: String, address: String) {
+    
+    do {
+      let _ = try db.collection("\(city.name)").document(city.id).collection("\(city.drink[3])").addDocument(from: Drink(location: location, address: address))
+//          completion(nil)
+    } catch let error {
+      print(error)
+    }
+  }
   
   var body: some View {
     VStack {
@@ -26,6 +40,7 @@ struct AddDrinkFourView: View {
           Spacer()
           
           Button(action: {
+            save(location: name, address: address)
             presentationMode.wrappedValue.dismiss()
           }) {
             Text("Add New \(city.drink[3])")

@@ -19,7 +19,7 @@ struct AddAttractionTwoView: View {
       Form {
         TextField("Location Name", text: $name)
           .textFieldStyle(PlainTextFieldStyle())
-        TextField("Location Name", text: $address)
+        TextField("Location Address", text: $address)
           .textFieldStyle(PlainTextFieldStyle())
         
         HStack {

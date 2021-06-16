@@ -56,6 +56,9 @@
 		4E9BB9FF267A3F11005475CF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4E9BB9FE267A3F11005475CF /* FirebaseAuth */; };
 		4E9BBA01267A3F59005475CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E9BBA00267A3F59005475CF /* GoogleService-Info.plist */; };
 		4E9BBA03267A402E005475CF /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BBA02267A402E005475CF /* UIImage+Extension.swift */; };
+		4E9BBA05267A42AF005475CF /* PhotoCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BBA04267A42AF005475CF /* PhotoCaptureView.swift */; };
+		4E9BBA07267A42E3005475CF /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BBA06267A42E3005475CF /* ImagePicker.swift */; };
+		4E9BBA09267A4355005475CF /* SourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BBA08267A4355005475CF /* SourceType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +106,9 @@
 		4E9BB9EF267951CA005475CF /* GlowBorder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GlowBorder+Extension.swift"; sourceTree = "<group>"; };
 		4E9BBA00267A3F59005475CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4E9BBA02267A402E005475CF /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		4E9BBA04267A42AF005475CF /* PhotoCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureView.swift; sourceTree = "<group>"; };
+		4E9BBA06267A42E3005475CF /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		4E9BBA08267A4355005475CF /* SourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +208,7 @@
 				4E9BB9C4267912B4005475CF /* DrinkViews */,
 				4E9BB9CD267913ED005475CF /* FoodViews */,
 				4E9BB9D62679156D005475CF /* AttractionViews */,
+				4E9BBA04267A42AF005475CF /* PhotoCaptureView.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -228,6 +235,8 @@
 			isa = PBXGroup;
 			children = (
 				4E9BB9A82678F33B005475CF /* Constant.swift */,
+				4E9BBA06267A42E3005475CF /* ImagePicker.swift */,
+				4E9BBA08267A4355005475CF /* SourceType.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -373,6 +382,7 @@
 				4E9BB9C126790F4B005475CF /* DrinkThreeView.swift in Sources */,
 				4E9BB9CC267913CB005475CF /* FoodFourView.swift in Sources */,
 				4E9BB9BF26790EFB005475CF /* DrinkTwoView.swift in Sources */,
+				4E9BBA05267A42AF005475CF /* PhotoCaptureView.swift in Sources */,
 				4E9BB9B12678F6FE005475CF /* CityDetailView.swift in Sources */,
 				4E9BB9A42678ED95005475CF /* CodableBundle+Extension.swift in Sources */,
 				4E9BB9DC26791DC0005475CF /* AddDrinkThreeView.swift in Sources */,
@@ -396,6 +406,8 @@
 				4E9BB98F2678EA9B005475CF /* BestOfApp.swift in Sources */,
 				4E9BB9C82679137E005475CF /* FoodTwoView.swift in Sources */,
 				4E9BBA03267A402E005475CF /* UIImage+Extension.swift in Sources */,
+				4E9BBA07267A42E3005475CF /* ImagePicker.swift in Sources */,
+				4E9BBA09267A4355005475CF /* SourceType.swift in Sources */,
 				4E9BB9E426791FD6005475CF /* AddFoodThreeView.swift in Sources */,
 				4E9BB9E226791FC7005475CF /* AddFoodTwoView.swift in Sources */,
 			);

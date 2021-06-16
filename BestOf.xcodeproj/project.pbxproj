@@ -55,6 +55,7 @@
 		4E9BB9FD267A3F11005475CF /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4E9BB9FC267A3F11005475CF /* FirebaseStorage */; };
 		4E9BB9FF267A3F11005475CF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4E9BB9FE267A3F11005475CF /* FirebaseAuth */; };
 		4E9BBA01267A3F59005475CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E9BBA00267A3F59005475CF /* GoogleService-Info.plist */; };
+		4E9BBA03267A402E005475CF /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BBA02267A402E005475CF /* UIImage+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +102,7 @@
 		4E9BB9ED26792172005475CF /* AddAttractionFourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAttractionFourView.swift; sourceTree = "<group>"; };
 		4E9BB9EF267951CA005475CF /* GlowBorder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GlowBorder+Extension.swift"; sourceTree = "<group>"; };
 		4E9BBA00267A3F59005475CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4E9BBA02267A402E005475CF /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 			children = (
 				4E9BB9A32678ED95005475CF /* CodableBundle+Extension.swift */,
 				4E9BB9EF267951CA005475CF /* GlowBorder+Extension.swift */,
+				4E9BBA02267A402E005475CF /* UIImage+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				4E9BB9CF267914C2005475CF /* AttractionOneView.swift in Sources */,
 				4E9BB98F2678EA9B005475CF /* BestOfApp.swift in Sources */,
 				4E9BB9C82679137E005475CF /* FoodTwoView.swift in Sources */,
+				4E9BBA03267A402E005475CF /* UIImage+Extension.swift in Sources */,
 				4E9BB9E426791FD6005475CF /* AddFoodThreeView.swift in Sources */,
 				4E9BB9E226791FC7005475CF /* AddFoodTwoView.swift in Sources */,
 			);

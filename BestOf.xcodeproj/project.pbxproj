@@ -59,6 +59,9 @@
 		4E9BBA05267A42AF005475CF /* PhotoCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BBA04267A42AF005475CF /* PhotoCaptureView.swift */; };
 		4E9BBA07267A42E3005475CF /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BBA06267A42E3005475CF /* ImagePicker.swift */; };
 		4E9BBA09267A4355005475CF /* SourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BBA08267A4355005475CF /* SourceType.swift */; };
+		4E9BBA0B267A45EC005475CF /* DrinkOneListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BBA0A267A45EC005475CF /* DrinkOneListViewModel.swift */; };
+		4E9BBA0D267A4651005475CF /* DrinkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BBA0C267A4651005475CF /* DrinkViewModel.swift */; };
+		4E9BBA0F267A4682005475CF /* DrinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BBA0E267A4682005475CF /* DrinkModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,6 +112,9 @@
 		4E9BBA04267A42AF005475CF /* PhotoCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureView.swift; sourceTree = "<group>"; };
 		4E9BBA06267A42E3005475CF /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		4E9BBA08267A4355005475CF /* SourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceType.swift; sourceTree = "<group>"; };
+		4E9BBA0A267A45EC005475CF /* DrinkOneListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkOneListViewModel.swift; sourceTree = "<group>"; };
+		4E9BBA0C267A4651005475CF /* DrinkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkViewModel.swift; sourceTree = "<group>"; };
+		4E9BBA0E267A4682005475CF /* DrinkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				4E9BB9AA2678F369005475CF /* CityModel.swift */,
+				4E9BBA0E267A4682005475CF /* DrinkModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -249,9 +256,11 @@
 				4E9BB9C026790F4B005475CF /* DrinkThreeView.swift */,
 				4E9BB9C226790F77005475CF /* DrinkFourView.swift */,
 				4E9BB9D726791B46005475CF /* AddDrinkOneView.swift */,
+				4E9BBA0A267A45EC005475CF /* DrinkOneListViewModel.swift */,
 				4E9BB9D926791DB4005475CF /* AddDrinkTwoView.swift */,
 				4E9BB9DB26791DC0005475CF /* AddDrinkThreeView.swift */,
 				4E9BB9DD26791DCD005475CF /* AddDrinkFourView.swift */,
+				4E9BBA0C267A4651005475CF /* DrinkViewModel.swift */,
 			);
 			path = DrinkViews;
 			sourceTree = "<group>";
@@ -381,6 +390,7 @@
 				4E9BB9C62679133C005475CF /* FoodOneView.swift in Sources */,
 				4E9BB9C126790F4B005475CF /* DrinkThreeView.swift in Sources */,
 				4E9BB9CC267913CB005475CF /* FoodFourView.swift in Sources */,
+				4E9BBA0B267A45EC005475CF /* DrinkOneListViewModel.swift in Sources */,
 				4E9BB9BF26790EFB005475CF /* DrinkTwoView.swift in Sources */,
 				4E9BBA05267A42AF005475CF /* PhotoCaptureView.swift in Sources */,
 				4E9BB9B12678F6FE005475CF /* CityDetailView.swift in Sources */,
@@ -396,9 +406,11 @@
 				4E9BB9A92678F33B005475CF /* Constant.swift in Sources */,
 				4E9BB9CA267913A9005475CF /* FoodThreeView.swift in Sources */,
 				4E9BB9EC2679215D005475CF /* AddAttractionThreeView.swift in Sources */,
+				4E9BBA0F267A4682005475CF /* DrinkModel.swift in Sources */,
 				4E9BB9B92678FEED005475CF /* CityFoodView.swift in Sources */,
 				4E9BB9C326790F77005475CF /* DrinkFourView.swift in Sources */,
 				4E9BB9E626791FE6005475CF /* AddFoodFourView.swift in Sources */,
+				4E9BBA0D267A4651005475CF /* DrinkViewModel.swift in Sources */,
 				4E9BB9D326791514005475CF /* AttractionThreeView.swift in Sources */,
 				4E9BB9AF2678F6AE005475CF /* CityView.swift in Sources */,
 				4E9BB9F0267951CA005475CF /* GlowBorder+Extension.swift in Sources */,

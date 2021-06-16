@@ -6,44 +6,50 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseFirestoreSwift
 
 struct DrinkOneView: View {
   let city: City
   
+  @ObservedObject private var drinksVM = DrinksListViewModel()
   @State private var showingAddDrinkOneView: Bool = false
+  
   
   var body: some View {
     NavigationView {
-      ZStack {
-        VStack {
-//          Text("Best \(city.drink[0]) in \(city.name)")
-//            .font(.title2)
-          
-          List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-            Text("Drink \(item)")
+      VStack(alignment: .leading) {
+        if drinksVM.drink.count > 0 {
+          List(drinksVM.drink, id: \.drinkId) { drink in
+            VStack {
+              Text(drink.location)
+              Text(drink.address)
+            }
           }
-          .listStyle(PlainListStyle())
         }
-        .navigationBarTitle("Best \(city.drink[0])")
-//        .navigationBarHidden(true)
-        .navigationBarItems(trailing:
-                              HStack {
-                                Button(action: {
-                                  self.showingAddDrinkOneView = true
-                                }) {
-                                  HStack {
-                                    Text("Add \(city.drink[0])")
-                                      .foregroundColor(.black)
-                                    //                                Image(systemName: "plus")
-                                    //                                  .foregroundColor(.black)
-                                  }
+      }
+      .navigationBarTitle("Best \(city.drink[0])")
+      //        .navigationBarHidden(true)
+      .navigationBarItems(trailing:
+                            HStack {
+                              Button(action: {
+                                self.showingAddDrinkOneView = true
+                              }) {
+                                HStack {
+                                  Text("Add \(city.drink[0])")
+                                    .foregroundColor(.black)
+                                  //                                Image(systemName: "plus")
+                                  //                                  .foregroundColor(.black)
                                 }
                               }
-        )
-      }
-      .sheet(isPresented: $showingAddDrinkOneView) {
-        AddDrinkOneView(city: city)
-      }
+                            }
+      )
+//      .onAppear() {
+//        self.drinksVM.fetchNolaDrinksOne()
+//      }
+    }
+    .sheet(isPresented: $showingAddDrinkOneView) {
+      AddDrinkOneView(city: city)
     }
   }
 }

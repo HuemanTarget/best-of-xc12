@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Drink: Codable {
+struct Drink: Codable, Identifiable {
   var id: String?
   var location: String = ""
   var address: String = ""

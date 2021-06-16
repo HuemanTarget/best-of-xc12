@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 struct DrinkViewModel {
   let drink: Drink
   
@@ -15,7 +16,7 @@ struct DrinkViewModel {
   }
   
   var location: String {
-    drink.location 
+    drink.location
   }
   
   var address: String {

@@ -6,9 +6,16 @@
 //
 
 import Foundation
+import FirebaseFirestoreSwift
 
 struct Drink: Codable, Identifiable {
-  var id: String?
+  @DocumentID var id: String?
   var location: String = ""
   var address: String = ""
+  
+  enum CodingKeys: String, CodingKey {
+    case id
+    case location
+    case address
+  }
 }

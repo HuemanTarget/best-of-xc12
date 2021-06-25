@@ -57,6 +57,7 @@
 		4EC8CF7E268684E300011387 /* DrinkOneDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8CF7D268684E300011387 /* DrinkOneDetailView.swift */; };
 		4EC8CF852686943900011387 /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8CF842686943900011387 /* FoodModel.swift */; };
 		4EC8CF872686945D00011387 /* AttractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8CF862686945D00011387 /* AttractionView.swift */; };
+		4EC8CF89268694B600011387 /* FoodListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8CF88268694B600011387 /* FoodListViewModel.swift */; };
 		4EFF9FB1268643740058D0AE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4EFF9FB0268643740058D0AE /* FirebaseFirestore */; };
 		4EFF9FB3268643740058D0AE /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 4EFF9FB2268643740058D0AE /* FirebaseFirestoreSwift-Beta */; };
 		4EFF9FB5268643740058D0AE /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 4EFF9FB4268643740058D0AE /* FirebaseAnalyticsSwift-Beta */; };
@@ -120,6 +121,7 @@
 		4EC8CF7D268684E300011387 /* DrinkOneDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkOneDetailView.swift; sourceTree = "<group>"; };
 		4EC8CF842686943900011387 /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
 		4EC8CF862686945D00011387 /* AttractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionView.swift; sourceTree = "<group>"; };
+		4EC8CF88268694B600011387 /* FoodListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +272,7 @@
 				4EC8CF80268693B600011387 /* FoodTwoViews */,
 				4EC8CF81268693C900011387 /* FoodThreeViews */,
 				4EC8CF82268693D800011387 /* FoodFourViews */,
+				4EC8CF88268694B600011387 /* FoodListViewModel.swift */,
 			);
 			path = FoodViews;
 			sourceTree = "<group>";
@@ -482,6 +485,7 @@
 				4E9BB9D52679154D005475CF /* AttractionFourView.swift in Sources */,
 				4E9BB9EE26792172005475CF /* AddAttractionFourView.swift in Sources */,
 				4E9BB9B72678FEAD005475CF /* CityDrinkView.swift in Sources */,
+				4EC8CF89268694B600011387 /* FoodListViewModel.swift in Sources */,
 				4E9BB9AD2678F509005475CF /* CityListItemView.swift in Sources */,
 				4E9BB9AB2678F369005475CF /* CityModel.swift in Sources */,
 				4E9BB9A92678F33B005475CF /* Constant.swift in Sources */,

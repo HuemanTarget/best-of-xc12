@@ -10,22 +10,47 @@ import SwiftUI
 struct AttractionOneView: View {
   let city: City
   
+  @ObservedObject var attractionVM: AttractionListViewModel
   @State private var showingAddAttractionOneView: Bool = false
+  
+  init(city: City) {
+    self.city = city
+    self.attractionVM = AttractionListViewModel(city: city)
+  }
+  
+  private func attractionRowView(attraction: Attraction) -> some View {
+    HStack {
+      Image(city.drinkImage[0])
+        .resizable()
+        .scaledToFill()
+        .frame(width: 60, height: 60)
+        .clipped()
+        .cornerRadius(30)
+      VStack(alignment: .leading) {
+        Text(attraction.location)
+          .font(.headline)
+        Text(attraction.address)
+          .font(.subheadline)
+      }
+      
+      Spacer()
+      
+      VStack {
+        Text("\(attraction.votes)")
+        Text("Votes")
+      }
+    }
+  }
   
   var body: some View {
     NavigationView {
-      ZStack {
-        VStack {
-//          Text("Best \(city.drink[0]) in \(city.name)")
-//            .font(.title2)
+      List {
+        ForEach(attractionVM.attractions) { attraction in
           
-          List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-            Text("Drink \(item)")
-          }
-          .listStyle(PlainListStyle())
+            attractionRowView(attraction: attraction)
+          
         }
         .navigationBarTitle("Best \(city.attraction[0])")
-//        .navigationBarHidden(true)
         .navigationBarItems(trailing:
                               HStack {
                                 Button(action: {
@@ -34,17 +59,21 @@ struct AttractionOneView: View {
                                   HStack {
                                     Text("Add \(city.attraction[0])")
                                       .foregroundColor(.black)
-                                    //                                Image(systemName: "plus")
-                                    //                                  .foregroundColor(.black)
+                                    Image(systemName: "plus")
+                                      .foregroundColor(.black)
                                   }
                                 }
                               }
         )
-      }
-      .sheet(isPresented: $showingAddAttractionOneView) {
-        AddAttractionOneView(city: city)
-      }
-    }
+        .onAppear() {
+          self.attractionVM.fetchAttractionOne()
+        }
+        .listStyle(PlainListStyle())
+        .sheet(isPresented: $showingAddAttractionOneView) {
+          AddAttractionOneView(city: city)
+        }
+      } //: LIST
+    } //: NAV
   }
 }
 

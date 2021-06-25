@@ -20,31 +20,37 @@ struct DrinkOneView: View {
     self.drinksVM = DrinksListViewModel(city: city)
   }
   
+  private func drinkRowView(drink: Drink) -> some View {
+    HStack {
+      Image(city.drinkImage[0])
+        .resizable()
+        .scaledToFill()
+        .frame(width: 60, height: 60)
+        .clipped()
+        .cornerRadius(30)
+      VStack(alignment: .leading) {
+        Text(drink.location)
+          .font(.headline)
+        Text(drink.address)
+          .font(.subheadline)
+      }
+      
+      Spacer()
+      
+      VStack {
+        Text("\(drink.votes)")
+        Text("Votes")
+      }
+    }
+  }
+  
   var body: some View {
     NavigationView {
       List {
         ForEach(drinksVM.drinks) { drink in
-          HStack {
-            Image(city.drinkImage[0])
-              .resizable()
-              .scaledToFill()
-              .frame(width: 60, height: 60)
-              .clipped()
-              .cornerRadius(30)
-            VStack(alignment: .leading) {
-              Text(drink.location)
-                .font(.headline)
-              Text(drink.address)
-                .font(.subheadline)
-            }
-            
-            Spacer()
-            
-            VStack {
-              Text("\(drink.votes)")
-              Text("Votes")
-            }
-          }
+          
+            drinkRowView(drink: drink)
+          
         }
         .navigationBarTitle("Best \(city.drink[0])")
         .navigationBarItems(trailing:
@@ -64,6 +70,7 @@ struct DrinkOneView: View {
         .onAppear() {
           self.drinksVM.fetchDrinksOne()
         }
+        .listStyle(PlainListStyle())
         .sheet(isPresented: $showingAddDrinkOneView) {
           AddDrinkOneView(city: city)
         }

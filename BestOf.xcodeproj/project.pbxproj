@@ -54,6 +54,7 @@
 		4E9BBA09267A4355005475CF /* SourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BBA08267A4355005475CF /* SourceType.swift */; };
 		4E9BBA0D267A4651005475CF /* DrinksListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BBA0C267A4651005475CF /* DrinksListViewModel.swift */; };
 		4E9BBA0F267A4682005475CF /* DrinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BBA0E267A4682005475CF /* DrinkModel.swift */; };
+		4EC8CF7E268684E300011387 /* DrinkOneDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8CF7D268684E300011387 /* DrinkOneDetailView.swift */; };
 		4EFF9FB1268643740058D0AE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4EFF9FB0268643740058D0AE /* FirebaseFirestore */; };
 		4EFF9FB3268643740058D0AE /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 4EFF9FB2268643740058D0AE /* FirebaseFirestoreSwift-Beta */; };
 		4EFF9FB5268643740058D0AE /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 4EFF9FB4268643740058D0AE /* FirebaseAnalyticsSwift-Beta */; };
@@ -114,6 +115,7 @@
 		4E9BBA08267A4355005475CF /* SourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceType.swift; sourceTree = "<group>"; };
 		4E9BBA0C267A4651005475CF /* DrinksListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksListViewModel.swift; sourceTree = "<group>"; };
 		4E9BBA0E267A4682005475CF /* DrinkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkModel.swift; sourceTree = "<group>"; };
+		4EC8CF7D268684E300011387 /* DrinkOneDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkOneDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,6 +297,7 @@
 			children = (
 				4E9BB9BC26790E7C005475CF /* DrinkOneView.swift */,
 				4E9BB9D726791B46005475CF /* AddDrinkOneView.swift */,
+				4EC8CF7D268684E300011387 /* DrinkOneDetailView.swift */,
 			);
 			path = DrinkOneViews;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 				4E9BBA09267A4355005475CF /* SourceType.swift in Sources */,
 				4E9BB9E426791FD6005475CF /* AddFoodThreeView.swift in Sources */,
 				4E9BB9E226791FC7005475CF /* AddFoodTwoView.swift in Sources */,
+				4EC8CF7E268684E300011387 /* DrinkOneDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

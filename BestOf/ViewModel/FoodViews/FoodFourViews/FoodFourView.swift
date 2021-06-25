@@ -1,5 +1,5 @@
 //
-//  AddFoodThreeView.swift
+//  FoodFourView.swift
 //  BestOf
 //
 //  Created by Joshua Basche on 6/15/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AddFoodThreeView: View {
+struct FoodFourView: View {
   let city: City
   
   @ObservedObject var foodVM: FoodListViewModel
@@ -77,8 +77,8 @@ struct AddFoodThreeView: View {
   }
 }
 
-struct AddFoodThreeView_Previews: PreviewProvider {
+struct FoodFourView_Previews: PreviewProvider {
   static var previews: some View {
-    AddFoodThreeView(city: cities[0])
+    FoodFourView(city: cities[0])
   }
 }

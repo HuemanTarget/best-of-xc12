@@ -1,5 +1,5 @@
 //
-//  AddFoodFourView.swift
+//  AddFoodThreeView.swift
 //  BestOf
 //
 //  Created by Joshua Basche on 6/15/21.
@@ -9,7 +9,7 @@ import SwiftUI
 import Firebase
 import FirebaseFirestoreSwift
 
-struct AddFoodFourView: View {
+struct AddFoodThreeView: View {
   let city: City
   let db = Firestore.firestore()
   
@@ -20,7 +20,7 @@ struct AddFoodFourView: View {
   
   func save(location: String, address: String) {
     do {
-      let _ = try db.collection("\(city.name)").document(city.id).collection("\(city.food[3])").addDocument(from: Food(location: location, address: address))
+      let _ = try db.collection("\(city.name)").document(city.id).collection("\(city.food[2])").addDocument(from: Food(location: location, address: address))
     } catch let error {
       print(error)
     }
@@ -41,7 +41,7 @@ struct AddFoodFourView: View {
             save(location: name, address: address)
             presentationMode.wrappedValue.dismiss()
           }) {
-            Text("Add New \(city.food[3])")
+            Text("Add New \(city.food[2])")
           }
           
           Spacer()
@@ -51,8 +51,8 @@ struct AddFoodFourView: View {
   }
 }
 
-struct AddFoodFourView_Previews: PreviewProvider {
+struct AddFoodThreeView_Previews: PreviewProvider {
   static var previews: some View {
-    AddFoodFourView(city: cities[0])
+    AddFoodThreeView(city: cities[0])
   }
 }

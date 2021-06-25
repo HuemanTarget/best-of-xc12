@@ -6,13 +6,25 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseFirestoreSwift
 
 struct AddAttractionThreeView: View {
   let city: City
+  let db = Firestore.firestore()
+  
   @Environment(\.presentationMode) var presentationMode
   
   @State private var name: String = ""
   @State private var address: String = ""
+  
+  func save(location: String, address: String) {
+    do {
+      let _ = try db.collection("\(city.name)").document(city.id).collection("\(city.attraction[2])").addDocument(from: Attraction(location: location, address: address))
+    } catch let error {
+      print(error)
+    }
+  }
   
   var body: some View {
     VStack {
@@ -26,6 +38,7 @@ struct AddAttractionThreeView: View {
           Spacer()
           
           Button(action: {
+            save(location: name, address: address)
             presentationMode.wrappedValue.dismiss()
           }) {
             Text("Add New \(city.attraction[2])")
@@ -35,7 +48,8 @@ struct AddAttractionThreeView: View {
         }
       }
     }
-  }}
+  }
+}
 
 struct AddAttractionThreeView_Previews: PreviewProvider {
   static var previews: some View {

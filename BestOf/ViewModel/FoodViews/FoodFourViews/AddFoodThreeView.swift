@@ -9,32 +9,71 @@ import SwiftUI
 
 struct AddFoodThreeView: View {
   let city: City
-  @Environment(\.presentationMode) var presentationMode
   
-  @State private var name: String = ""
-  @State private var address: String = ""
+  @ObservedObject var foodVM: FoodListViewModel
+  @State private var showingAddFoodFourView: Bool = false
   
-  var body: some View {
-    VStack {
-      Form {
-        TextField("Location Name", text: $name)
-          .textFieldStyle(PlainTextFieldStyle())
-        TextField("Location Address", text: $address)
-          .textFieldStyle(PlainTextFieldStyle())
-        
-        HStack {
-          Spacer()
-          
-          Button(action: {
-            presentationMode.wrappedValue.dismiss()
-          }) {
-            Text("Add New \(city.food[2])")
-          }
-          
-          Spacer()
-        }
+  init(city: City) {
+    self.city = city
+    self.foodVM = FoodListViewModel(city: city)
+  }
+  
+  private func foodRowView(food: Food) -> some View {
+    HStack {
+      Image(city.drinkImage[3])
+        .resizable()
+        .scaledToFill()
+        .frame(width: 60, height: 60)
+        .clipped()
+        .cornerRadius(30)
+      VStack(alignment: .leading) {
+        Text(food.location)
+          .font(.headline)
+        Text(food.address)
+          .font(.subheadline)
+      }
+      
+      Spacer()
+      
+      VStack {
+        Text("\(food.votes)")
+        Text("Votes")
       }
     }
+  }
+  
+  var body: some View {
+    NavigationView {
+      List {
+        ForEach(foodVM.foods) { food in
+          
+            foodRowView(food: food)
+          
+        }
+        .navigationBarTitle("Best \(city.food[3])")
+        .navigationBarItems(trailing:
+                              HStack {
+                                Button(action: {
+                                  self.showingAddFoodFourView = true
+                                }) {
+                                  HStack {
+                                    Text("Add \(city.food[3])")
+                                      .foregroundColor(.black)
+                                    Image(systemName: "plus")
+                                      .foregroundColor(.black)
+                                  }
+                                }
+                              }
+        )
+        .onAppear() {
+          self.foodVM.fetchFoodFour()
+        }
+        .listStyle(PlainListStyle())
+        .sheet(isPresented: $showingAddFoodFourView) {
+          AddFoodFourView(city: city)
+        }
+      } //: LIST
+    } //: NAV
   }
 }
 

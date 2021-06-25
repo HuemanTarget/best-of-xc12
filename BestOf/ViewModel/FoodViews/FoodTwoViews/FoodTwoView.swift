@@ -10,22 +10,47 @@ import SwiftUI
 struct FoodTwoView: View {
   let city: City
   
+  @ObservedObject var foodVM: FoodListViewModel
   @State private var showingAddFoodTwoView: Bool = false
+  
+  init(city: City) {
+    self.city = city
+    self.foodVM = FoodListViewModel(city: city)
+  }
+  
+  private func foodRowView(food: Food) -> some View {
+    HStack {
+      Image(city.drinkImage[1])
+        .resizable()
+        .scaledToFill()
+        .frame(width: 60, height: 60)
+        .clipped()
+        .cornerRadius(30)
+      VStack(alignment: .leading) {
+        Text(food.location)
+          .font(.headline)
+        Text(food.address)
+          .font(.subheadline)
+      }
+      
+      Spacer()
+      
+      VStack {
+        Text("\(food.votes)")
+        Text("Votes")
+      }
+    }
+  }
   
   var body: some View {
     NavigationView {
-      ZStack {
-        VStack {
-//          Text("Best \(city.drink[0]) in \(city.name)")
-//            .font(.title2)
+      List {
+        ForEach(foodVM.foods) { food in
           
-          List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-            Text("Food \(item)")
-          }
-          .listStyle(PlainListStyle())
+            foodRowView(food: food)
+          
         }
         .navigationBarTitle("Best \(city.food[1])")
-//        .navigationBarHidden(true)
         .navigationBarItems(trailing:
                               HStack {
                                 Button(action: {
@@ -34,17 +59,21 @@ struct FoodTwoView: View {
                                   HStack {
                                     Text("Add \(city.food[1])")
                                       .foregroundColor(.black)
-                                    //                                Image(systemName: "plus")
-                                    //                                  .foregroundColor(.black)
+                                    Image(systemName: "plus")
+                                      .foregroundColor(.black)
                                   }
                                 }
                               }
         )
-      }
-      .sheet(isPresented: $showingAddFoodTwoView) {
-        AddFoodTwoView(city: city)
-      }
-    }
+        .onAppear() {
+          self.foodVM.fetchFoodTwo()
+        }
+        .listStyle(PlainListStyle())
+        .sheet(isPresented: $showingAddFoodTwoView) {
+          AddFoodTwoView(city: city)
+        }
+      } //: LIST
+    } //: NAV
   }
 }
 

@@ -22,7 +22,6 @@ struct AddDrinkOneView: View {
     
     do {
       let _ = try db.collection("\(city.name)").document(city.id).collection("\(city.drink[0])").addDocument(from: Drink(location: location, address: address))
-//          completion(nil)
     } catch let error {
       print(error)
     }

@@ -58,6 +58,7 @@
 		4EC8CF852686943900011387 /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8CF842686943900011387 /* FoodModel.swift */; };
 		4EC8CF872686945D00011387 /* AttractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8CF862686945D00011387 /* AttractionView.swift */; };
 		4EC8CF89268694B600011387 /* FoodListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8CF88268694B600011387 /* FoodListViewModel.swift */; };
+		4EC8CF8F26869D0900011387 /* AttractionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8CF8E26869D0900011387 /* AttractionListViewModel.swift */; };
 		4EFF9FB1268643740058D0AE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4EFF9FB0268643740058D0AE /* FirebaseFirestore */; };
 		4EFF9FB3268643740058D0AE /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 4EFF9FB2268643740058D0AE /* FirebaseFirestoreSwift-Beta */; };
 		4EFF9FB5268643740058D0AE /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 4EFF9FB4268643740058D0AE /* FirebaseAnalyticsSwift-Beta */; };
@@ -122,6 +123,7 @@
 		4EC8CF842686943900011387 /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
 		4EC8CF862686945D00011387 /* AttractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionView.swift; sourceTree = "<group>"; };
 		4EC8CF88268694B600011387 /* FoodListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListViewModel.swift; sourceTree = "<group>"; };
+		4EC8CF8E26869D0900011387 /* AttractionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,14 +282,11 @@
 		4E9BB9D62679156D005475CF /* AttractionViews */ = {
 			isa = PBXGroup;
 			children = (
-				4E9BB9CE267914C2005475CF /* AttractionOneView.swift */,
-				4E9BB9D0267914EE005475CF /* AttractionTwoView.swift */,
-				4E9BB9D226791514005475CF /* AttractionThreeView.swift */,
-				4E9BB9D42679154D005475CF /* AttractionFourView.swift */,
-				4E9BB9E726792120005475CF /* AddAttractionOneView.swift */,
-				4E9BB9E92679214A005475CF /* AddAttractionTwoView.swift */,
-				4E9BB9EB2679215D005475CF /* AddAttractionThreeView.swift */,
-				4E9BB9ED26792172005475CF /* AddAttractionFourView.swift */,
+				4EC8CF8A26869CB600011387 /* AttractionOneViews */,
+				4EC8CF8B26869CC600011387 /* AttractionTwoViews */,
+				4EC8CF8C26869CD700011387 /* AttractionThreeViews */,
+				4EC8CF8D26869CEA00011387 /* AttractionFourViews */,
+				4EC8CF8E26869D0900011387 /* AttractionListViewModel.swift */,
 			);
 			path = AttractionViews;
 			sourceTree = "<group>";
@@ -376,6 +375,42 @@
 				4E9BB9BA2678FF27005475CF /* CityAttractionView.swift */,
 			);
 			path = CityAllViews;
+			sourceTree = "<group>";
+		};
+		4EC8CF8A26869CB600011387 /* AttractionOneViews */ = {
+			isa = PBXGroup;
+			children = (
+				4E9BB9CE267914C2005475CF /* AttractionOneView.swift */,
+				4E9BB9E726792120005475CF /* AddAttractionOneView.swift */,
+			);
+			path = AttractionOneViews;
+			sourceTree = "<group>";
+		};
+		4EC8CF8B26869CC600011387 /* AttractionTwoViews */ = {
+			isa = PBXGroup;
+			children = (
+				4E9BB9D0267914EE005475CF /* AttractionTwoView.swift */,
+				4E9BB9E92679214A005475CF /* AddAttractionTwoView.swift */,
+			);
+			path = AttractionTwoViews;
+			sourceTree = "<group>";
+		};
+		4EC8CF8C26869CD700011387 /* AttractionThreeViews */ = {
+			isa = PBXGroup;
+			children = (
+				4E9BB9D226791514005475CF /* AttractionThreeView.swift */,
+				4E9BB9EB2679215D005475CF /* AddAttractionThreeView.swift */,
+			);
+			path = AttractionThreeViews;
+			sourceTree = "<group>";
+		};
+		4EC8CF8D26869CEA00011387 /* AttractionFourViews */ = {
+			isa = PBXGroup;
+			children = (
+				4E9BB9D42679154D005475CF /* AttractionFourView.swift */,
+				4E9BB9ED26792172005475CF /* AddAttractionFourView.swift */,
+			);
+			path = AttractionFourViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -487,6 +522,7 @@
 				4E9BB9B72678FEAD005475CF /* CityDrinkView.swift in Sources */,
 				4EC8CF89268694B600011387 /* FoodListViewModel.swift in Sources */,
 				4E9BB9AD2678F509005475CF /* CityListItemView.swift in Sources */,
+				4EC8CF8F26869D0900011387 /* AttractionListViewModel.swift in Sources */,
 				4E9BB9AB2678F369005475CF /* CityModel.swift in Sources */,
 				4E9BB9A92678F33B005475CF /* Constant.swift in Sources */,
 				4E9BB9CA267913A9005475CF /* FoodThreeView.swift in Sources */,

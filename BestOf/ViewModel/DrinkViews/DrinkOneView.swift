@@ -50,40 +50,6 @@ struct DrinkOneView: View {
         }
       } //: LIST
     } //: NAV
-    //    NavigationView {
-    //      VStack(alignment: .leading) {
-    //        if drinksVM.drink.count > 0 {
-    //          List(drinksVM.drink, id: \.drinkId) { drink in
-    //            VStack {
-    //              Text(verbatim: drink.location)
-    //              Text(drink.address)
-    //            }
-    //          }
-    //        }
-    //      }
-    //      .navigationBarTitle("Best \(city.drink[0])")
-    //      //        .navigationBarHidden(true)
-    //      .navigationBarItems(trailing:
-    //                            HStack {
-    //                              Button(action: {
-    //                                self.showingAddDrinkOneView = true
-    //                              }) {
-    //                                HStack {
-    //                                  Text("Add \(city.drink[0])")
-    //                                    .foregroundColor(.black)
-    //                                  //                                Image(systemName: "plus")
-    //                                  //                                  .foregroundColor(.black)
-    //                                }
-    //                              }
-    //                            }
-    //      )
-    //      .onAppear() {
-    //        self.drinksVM.fetchNolaDrinksOne()
-    //      }
-    //    }
-    //    .sheet(isPresented: $showingAddDrinkOneView) {
-    //      AddDrinkOneView(city: city)
-    //    }
   }
 }
 

@@ -10,22 +10,21 @@ import SwiftUI
 struct DrinkTwoView: View {
   let city: City
   
+  @ObservedObject private var drinksVM = DrinksListViewModel()
   @State private var showingAddDrinkTwoView: Bool = false
   
   var body: some View {
     NavigationView {
-      ZStack {
-        VStack {
-//          Text("Best \(city.drink[0]) in \(city.name)")
-//            .font(.title2)
-          
-          List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-            Text("Drink \(item)")
+      List {
+        ForEach(drinksVM.drinks) { drink in
+          VStack(alignment: .leading) {
+            Text(drink.location)
+            Text(drink.address)
+            
+            Divider()
           }
-          .listStyle(PlainListStyle())
-        }
+        }//: LOOP
         .navigationBarTitle("Best \(city.drink[1])")
-//        .navigationBarHidden(true)
         .navigationBarItems(trailing:
                               HStack {
                                 Button(action: {
@@ -34,23 +33,26 @@ struct DrinkTwoView: View {
                                   HStack {
                                     Text("Add \(city.drink[1])")
                                       .foregroundColor(.black)
-                                    //                                Image(systemName: "plus")
-                                    //                                  .foregroundColor(.black)
+                                    Image(systemName: "plus")
+                                      .foregroundColor(.black)
                                   }
                                 }
                               }
         )
-      }
-      .sheet(isPresented: $showingAddDrinkTwoView) {
-        AddDrinkTwoView(city: city)
-      }
-    }
+        .onAppear() {
+          self.drinksVM.fetchNolaDrinksTwo()
+        }
+        .sheet(isPresented: $showingAddDrinkTwoView) {
+          AddDrinkTwoView(city: city)
+        }
+      }//: LIST
+    }//: NAV
   }
 }
 
 
 struct DrinkTwoView_Previews: PreviewProvider {
   static var previews: some View {
-    DrinkTwoView(city: cities[0])
+    DrinkTwoView(city: cities[1])
   }
 }

@@ -10,15 +10,20 @@ import Firebase
 import FirebaseFirestoreSwift
 
 class DrinksListViewModel: ObservableObject {
+  let city: City
   @Published var drinks = [Drink]()
   
   private var db = Firestore.firestore()
   
+  init(city: City) {
+    self.city = city
+    fetchDrinksOne()
+  }
   
-  func fetchNolaDrinksOne() {
-    let nolaDrinkOne = db.collection("New Orleans").document("nola").collection("Sazerac")
+  func fetchDrinksOne() {
+    let drinkOne = db.collection(city.name).document(city.id).collection(city.drink[0])
     
-    nolaDrinkOne.addSnapshotListener { snapshot, error in
+    drinkOne.addSnapshotListener { snapshot, error in
       guard let documents = snapshot?.documents else {
         print("No Documents")
         return
@@ -30,10 +35,10 @@ class DrinksListViewModel: ObservableObject {
     }
   }
   
-  func fetchNolaDrinksTwo() {
-    let nolaDrinkTwo = db.collection("New Orleans").document("nola").collection("Hurricane")
+  func fetchDrinksTwo() {
+    let drinkOne = db.collection(city.name).document(city.id).collection(city.drink[1])
     
-    nolaDrinkTwo.addSnapshotListener { snapshot, error in
+    drinkOne.addSnapshotListener { snapshot, error in
       guard let documents = snapshot?.documents else {
         print("No Documents")
         return
@@ -45,10 +50,10 @@ class DrinksListViewModel: ObservableObject {
     }
   }
   
-  func fetchNolaDrinksThree() {
-    let nolaDrinkThree = db.collection("New Orleans").document("nola").collection("Pimms Cup")
+  func fetchDrinksThree() {
+    let drinkOne = db.collection(city.name).document(city.id).collection(city.drink[2])
     
-    nolaDrinkThree.addSnapshotListener { snapshot, error in
+    drinkOne.addSnapshotListener { snapshot, error in
       guard let documents = snapshot?.documents else {
         print("No Documents")
         return
@@ -60,10 +65,10 @@ class DrinksListViewModel: ObservableObject {
     }
   }
   
-  func fetchNolaDrinksFour() {
-    let nolaDrinkFour = db.collection("New Orleans").document("nola").collection("Dive Bar")
+  func fetchDrinksFour() {
+    let drinkOne = db.collection(city.name).document(city.id).collection(city.drink[3])
     
-    nolaDrinkFour.addSnapshotListener { snapshot, error in
+    drinkOne.addSnapshotListener { snapshot, error in
       guard let documents = snapshot?.documents else {
         print("No Documents")
         return
@@ -75,18 +80,79 @@ class DrinksListViewModel: ObservableObject {
     }
   }
   
-  func fetchLADrinksOne() {
-    let laDrinkOne = db.collection("Los Angeles").document("la").collection("Moscow Mule")
-    
-    laDrinkOne.addSnapshotListener { snapshot, error in
-      guard let documents = snapshot?.documents else {
-        print("No Documents")
-        return
-      }
-      
-      self.drinks = documents.compactMap({ queryDocumentSnapshot -> Drink? in
-        return try? queryDocumentSnapshot.data(as: Drink.self)
-      })
-    }
-  }
+  
+//  func fetchNolaDrinksOne() {
+//    let nolaDrinkOne = db.collection("New Orleans").document("nola").collection("Sazerac")
+//
+//    nolaDrinkOne.addSnapshotListener { snapshot, error in
+//      guard let documents = snapshot?.documents else {
+//        print("No Documents")
+//        return
+//      }
+//
+//      self.drinks = documents.compactMap({ queryDocumentSnapshot -> Drink? in
+//        return try? queryDocumentSnapshot.data(as: Drink.self)
+//      })
+//    }
+//  }
+//
+//  func fetchNolaDrinksTwo() {
+//    let nolaDrinkTwo = db.collection("New Orleans").document("nola").collection("Hurricane")
+//
+//    nolaDrinkTwo.addSnapshotListener { snapshot, error in
+//      guard let documents = snapshot?.documents else {
+//        print("No Documents")
+//        return
+//      }
+//
+//      self.drinks = documents.compactMap({ queryDocumentSnapshot -> Drink? in
+//        return try? queryDocumentSnapshot.data(as: Drink.self)
+//      })
+//    }
+//  }
+//
+//  func fetchNolaDrinksThree() {
+//    let nolaDrinkThree = db.collection("New Orleans").document("nola").collection("Pimms Cup")
+//
+//    nolaDrinkThree.addSnapshotListener { snapshot, error in
+//      guard let documents = snapshot?.documents else {
+//        print("No Documents")
+//        return
+//      }
+//
+//      self.drinks = documents.compactMap({ queryDocumentSnapshot -> Drink? in
+//        return try? queryDocumentSnapshot.data(as: Drink.self)
+//      })
+//    }
+//  }
+//
+//  func fetchNolaDrinksFour() {
+//    let nolaDrinkFour = db.collection("New Orleans").document("nola").collection("Dive Bar")
+//
+//    nolaDrinkFour.addSnapshotListener { snapshot, error in
+//      guard let documents = snapshot?.documents else {
+//        print("No Documents")
+//        return
+//      }
+//
+//      self.drinks = documents.compactMap({ queryDocumentSnapshot -> Drink? in
+//        return try? queryDocumentSnapshot.data(as: Drink.self)
+//      })
+//    }
+//  }
+//
+//  func fetchLADrinksOne() {
+//    let laDrinkOne = db.collection("Los Angeles").document("la").collection("Moscow Mule")
+//
+//    laDrinkOne.addSnapshotListener { snapshot, error in
+//      guard let documents = snapshot?.documents else {
+//        print("No Documents")
+//        return
+//      }
+//
+//      self.drinks = documents.compactMap({ queryDocumentSnapshot -> Drink? in
+//        return try? queryDocumentSnapshot.data(as: Drink.self)
+//      })
+//    }
+//  }
 }

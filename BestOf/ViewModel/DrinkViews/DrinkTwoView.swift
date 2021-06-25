@@ -10,18 +10,32 @@ import SwiftUI
 struct DrinkTwoView: View {
   let city: City
   
-  @ObservedObject private var drinksVM = DrinksListViewModel()
+  @ObservedObject var drinksVM: DrinksListViewModel
   @State private var showingAddDrinkTwoView: Bool = false
+  
+  init(city: City) {
+    self.city = city
+    self.drinksVM = DrinksListViewModel(city: city)
+  }
   
   var body: some View {
     NavigationView {
       List {
         ForEach(drinksVM.drinks) { drink in
-          VStack(alignment: .leading) {
-            Text(drink.location)
-            Text(drink.address)
+          HStack {
+            VStack(alignment: .leading) {
+              Text(drink.location)
+                .font(.headline)
+              Text(drink.address)
+                .font(.subheadline)
+            }
             
-            Divider()
+            Spacer()
+            
+            VStack {
+              Text("\(drink.votes)")
+              Text("Votes")
+            }
           }
         }//: LOOP
         .navigationBarTitle("Best \(city.drink[1])")
@@ -40,7 +54,7 @@ struct DrinkTwoView: View {
                               }
         )
         .onAppear() {
-          self.drinksVM.fetchNolaDrinksTwo()
+          self.drinksVM.fetchDrinksTwo()
         }
         .sheet(isPresented: $showingAddDrinkTwoView) {
           AddDrinkTwoView(city: city)
@@ -51,8 +65,8 @@ struct DrinkTwoView: View {
 }
 
 
-struct DrinkTwoView_Previews: PreviewProvider {
-  static var previews: some View {
-    DrinkTwoView(city: cities[1])
-  }
-}
+//struct DrinkTwoView_Previews: PreviewProvider {
+//  static var previews: some View {
+//    DrinkTwoView(city: cities[1])
+//  }
+//}

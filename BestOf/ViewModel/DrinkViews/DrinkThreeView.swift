@@ -10,22 +10,35 @@ import SwiftUI
 struct DrinkThreeView: View {
   let city: City
   
+  @ObservedObject var drinksVM: DrinksListViewModel
   @State private var showingAddDrinkThreeView: Bool = false
+  
+  init(city: City) {
+    self.city = city
+    self.drinksVM = DrinksListViewModel(city: city)
+  }
   
   var body: some View {
     NavigationView {
-      ZStack {
-        VStack {
-//          Text("Best \(city.drink[0]) in \(city.name)")
-//            .font(.title2)
-          
-          List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-            Text("Drink \(item)")
+      List {
+        ForEach(drinksVM.drinks) { drink in
+          HStack {
+            VStack(alignment: .leading) {
+              Text(drink.location)
+                .font(.headline)
+              Text(drink.address)
+                .font(.subheadline)
+            }
+            
+            Spacer()
+            
+            VStack {
+              Text("\(drink.votes)")
+              Text("Votes")
+            }
           }
-          .listStyle(PlainListStyle())
-        }
+        }//: LOOP
         .navigationBarTitle("Best \(city.drink[2])")
-//        .navigationBarHidden(true)
         .navigationBarItems(trailing:
                               HStack {
                                 Button(action: {
@@ -34,22 +47,25 @@ struct DrinkThreeView: View {
                                   HStack {
                                     Text("Add \(city.drink[2])")
                                       .foregroundColor(.black)
-                                    //                                Image(systemName: "plus")
-                                    //                                  .foregroundColor(.black)
+                                    Image(systemName: "plus")
+                                      .foregroundColor(.black)
                                   }
                                 }
                               }
         )
-      }
-      .sheet(isPresented: $showingAddDrinkThreeView) {
-        AddDrinkThreeView(city: city)
-      }
-    }
+        .onAppear() {
+          self.drinksVM.fetchDrinksThree()
+        }
+        .sheet(isPresented: $showingAddDrinkThreeView) {
+          AddDrinkThreeView(city: city)
+        }
+      }//: LIST
+    }//: NAV
   }
 }
 
-struct DrinkThreeView_Previews: PreviewProvider {
-  static var previews: some View {
-    DrinkThreeView(city: cities[0])
-  }
-}
+//struct DrinkThreeView_Previews: PreviewProvider {
+//  static var previews: some View {
+//    DrinkThreeView(city: cities[0])
+//  }
+//}

@@ -12,9 +12,13 @@ import FirebaseFirestoreSwift
 struct DrinkOneView: View {
   let city: City
   
-  @ObservedObject private var drinksVM = DrinksListViewModel()
+  @ObservedObject var drinksVM: DrinksListViewModel
   @State private var showingAddDrinkOneView: Bool = false
   
+  init(city: City) {
+    self.city = city
+    self.drinksVM = DrinksListViewModel(city: city)
+  }
   
   var body: some View {
     NavigationView {
@@ -52,7 +56,7 @@ struct DrinkOneView: View {
                               }
         )
         .onAppear() {
-          self.drinksVM.fetchNolaDrinksOne()
+          self.drinksVM.fetchDrinksOne()
         }
         .sheet(isPresented: $showingAddDrinkOneView) {
           AddDrinkOneView(city: city)
@@ -62,8 +66,8 @@ struct DrinkOneView: View {
   }
 }
 
-struct DrinkOneView_Previews: PreviewProvider {
-  static var previews: some View {
-    DrinkOneView(city: cities[0])
-  }
-}
+//struct DrinkOneView_Previews: PreviewProvider {
+//  static var previews: some View {
+//    DrinkOneView(city: cities[0])
+//  }
+//}

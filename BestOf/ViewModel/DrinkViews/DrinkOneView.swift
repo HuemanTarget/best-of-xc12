@@ -20,11 +20,20 @@ struct DrinkOneView: View {
     NavigationView {
       List {
         ForEach(drinksVM.drinks) { drink in
-          VStack(alignment: .leading) {
-            Text(drink.location)
-            Text(drink.address)
+          HStack {
+            VStack(alignment: .leading) {
+              Text(drink.location)
+                .font(.headline)
+              Text(drink.address)
+                .font(.subheadline)
+            }
             
-            Divider()
+            Spacer()
+            
+            VStack {
+              Text("\(drink.votes)")
+              Text("Votes")
+            }
           }
         }
         .navigationBarTitle("Best \(city.drink[0])")

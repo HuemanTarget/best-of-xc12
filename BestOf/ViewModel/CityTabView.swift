@@ -25,7 +25,7 @@ struct CityTabView: View {
         
         CityAttractionView(city: city)
           .tabItem {
-            Label("Attarctions", systemImage: "xmark")
+            Label("Attractions", systemImage: "xmark")
           }
       }
     }

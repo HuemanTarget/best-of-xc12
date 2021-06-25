@@ -16,9 +16,9 @@ struct CityView: View {
             CityListItemView(city: city)
           }
         }
-      }
+      }.padding(.top, 20)
       .listStyle(PlainListStyle())
-      .navigationTitle("Cities")
+      .navigationBarTitle("Cities", displayMode: .inline)
     }
   }
 }

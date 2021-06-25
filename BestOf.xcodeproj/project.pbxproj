@@ -52,10 +52,8 @@
 		4E9BBA05267A42AF005475CF /* PhotoCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BBA04267A42AF005475CF /* PhotoCaptureView.swift */; };
 		4E9BBA07267A42E3005475CF /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BBA06267A42E3005475CF /* ImagePicker.swift */; };
 		4E9BBA09267A4355005475CF /* SourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BBA08267A4355005475CF /* SourceType.swift */; };
-		4E9BBA0B267A45EC005475CF /* DrinkOneListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BBA0A267A45EC005475CF /* DrinkOneListViewModel.swift */; };
 		4E9BBA0D267A4651005475CF /* DrinksListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BBA0C267A4651005475CF /* DrinksListViewModel.swift */; };
 		4E9BBA0F267A4682005475CF /* DrinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BBA0E267A4682005475CF /* DrinkModel.swift */; };
-		4E9BBA11267A73B0005475CF /* DrinkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BBA10267A73B0005475CF /* DrinkViewModel.swift */; };
 		4EFF9FB1268643740058D0AE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4EFF9FB0268643740058D0AE /* FirebaseFirestore */; };
 		4EFF9FB3268643740058D0AE /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 4EFF9FB2268643740058D0AE /* FirebaseFirestoreSwift-Beta */; };
 		4EFF9FB5268643740058D0AE /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 4EFF9FB4268643740058D0AE /* FirebaseAnalyticsSwift-Beta */; };
@@ -114,10 +112,8 @@
 		4E9BBA04267A42AF005475CF /* PhotoCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureView.swift; sourceTree = "<group>"; };
 		4E9BBA06267A42E3005475CF /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		4E9BBA08267A4355005475CF /* SourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceType.swift; sourceTree = "<group>"; };
-		4E9BBA0A267A45EC005475CF /* DrinkOneListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkOneListViewModel.swift; sourceTree = "<group>"; };
 		4E9BBA0C267A4651005475CF /* DrinksListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksListViewModel.swift; sourceTree = "<group>"; };
 		4E9BBA0E267A4682005475CF /* DrinkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkModel.swift; sourceTree = "<group>"; };
-		4E9BBA10267A73B0005475CF /* DrinkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,17 +251,11 @@
 		4E9BB9C4267912B4005475CF /* DrinkViews */ = {
 			isa = PBXGroup;
 			children = (
-				4E9BB9BC26790E7C005475CF /* DrinkOneView.swift */,
-				4E9BB9BE26790EFB005475CF /* DrinkTwoView.swift */,
-				4E9BB9C026790F4B005475CF /* DrinkThreeView.swift */,
-				4E9BB9C226790F77005475CF /* DrinkFourView.swift */,
-				4E9BB9D726791B46005475CF /* AddDrinkOneView.swift */,
-				4E9BBA0A267A45EC005475CF /* DrinkOneListViewModel.swift */,
-				4E9BB9D926791DB4005475CF /* AddDrinkTwoView.swift */,
-				4E9BB9DB26791DC0005475CF /* AddDrinkThreeView.swift */,
-				4E9BB9DD26791DCD005475CF /* AddDrinkFourView.swift */,
+				4EC8CF792686842200011387 /* DrinkOneViews */,
+				4EC8CF7A2686843000011387 /* DrinkTwoViews */,
+				4EC8CF7B2686843E00011387 /* DrinkThreeViews */,
+				4EC8CF7C2686844D00011387 /* DrinkFourViews */,
 				4E9BBA0C267A4651005475CF /* DrinksListViewModel.swift */,
-				4E9BBA10267A73B0005475CF /* DrinkViewModel.swift */,
 			);
 			path = DrinkViews;
 			sourceTree = "<group>";
@@ -298,6 +288,42 @@
 				4E9BB9ED26792172005475CF /* AddAttractionFourView.swift */,
 			);
 			path = AttractionViews;
+			sourceTree = "<group>";
+		};
+		4EC8CF792686842200011387 /* DrinkOneViews */ = {
+			isa = PBXGroup;
+			children = (
+				4E9BB9BC26790E7C005475CF /* DrinkOneView.swift */,
+				4E9BB9D726791B46005475CF /* AddDrinkOneView.swift */,
+			);
+			path = DrinkOneViews;
+			sourceTree = "<group>";
+		};
+		4EC8CF7A2686843000011387 /* DrinkTwoViews */ = {
+			isa = PBXGroup;
+			children = (
+				4E9BB9BE26790EFB005475CF /* DrinkTwoView.swift */,
+				4E9BB9D926791DB4005475CF /* AddDrinkTwoView.swift */,
+			);
+			path = DrinkTwoViews;
+			sourceTree = "<group>";
+		};
+		4EC8CF7B2686843E00011387 /* DrinkThreeViews */ = {
+			isa = PBXGroup;
+			children = (
+				4E9BB9C026790F4B005475CF /* DrinkThreeView.swift */,
+				4E9BB9DB26791DC0005475CF /* AddDrinkThreeView.swift */,
+			);
+			path = DrinkThreeViews;
+			sourceTree = "<group>";
+		};
+		4EC8CF7C2686844D00011387 /* DrinkFourViews */ = {
+			isa = PBXGroup;
+			children = (
+				4E9BB9C226790F77005475CF /* DrinkFourView.swift */,
+				4E9BB9DD26791DCD005475CF /* AddDrinkFourView.swift */,
+			);
+			path = DrinkFourViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,10 +420,8 @@
 				4E9BB9E026791FAB005475CF /* AddFoodOneView.swift in Sources */,
 				4E9BB9DE26791DCD005475CF /* AddDrinkFourView.swift in Sources */,
 				4E9BB9C62679133C005475CF /* FoodOneView.swift in Sources */,
-				4E9BBA11267A73B0005475CF /* DrinkViewModel.swift in Sources */,
 				4E9BB9C126790F4B005475CF /* DrinkThreeView.swift in Sources */,
 				4E9BB9CC267913CB005475CF /* FoodFourView.swift in Sources */,
-				4E9BBA0B267A45EC005475CF /* DrinkOneListViewModel.swift in Sources */,
 				4E9BB9BF26790EFB005475CF /* DrinkTwoView.swift in Sources */,
 				4E9BBA05267A42AF005475CF /* PhotoCaptureView.swift in Sources */,
 				4E9BB9B12678F6FE005475CF /* CityDetailView.swift in Sources */,

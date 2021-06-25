@@ -1,5 +1,5 @@
 //
-//  DrinkViewModel.swift
+//  DrinkListViewModel.swift
 //  BestOf
 //
 //  Created by Joshua Basche on 6/16/21.
@@ -17,7 +17,6 @@ class DrinksListViewModel: ObservableObject {
   
   init(city: City) {
     self.city = city
-    fetchDrinksOne()
   }
   
   func fetchDrinksOne() {

@@ -1,5 +1,5 @@
 //
-//  DrinkThreeView.swift
+//  DrinkTwoView.swift
 //  BestOf
 //
 //  Created by Joshua Basche on 6/15/21.
@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct DrinkThreeView: View {
+struct DrinkTwoView: View {
   let city: City
   
   @ObservedObject var drinksVM: DrinksListViewModel
-  @State private var showingAddDrinkThreeView: Bool = false
+  @State private var showingAddDrinkTwoView: Bool = false
   
   init(city: City) {
     self.city = city
@@ -23,6 +23,12 @@ struct DrinkThreeView: View {
       List {
         ForEach(drinksVM.drinks) { drink in
           HStack {
+            Image(city.drinkImage[1])
+              .resizable()
+              .scaledToFill()
+              .frame(width: 60, height: 60)
+              .clipped()
+              .cornerRadius(30)
             VStack(alignment: .leading) {
               Text(drink.location)
                 .font(.headline)
@@ -38,14 +44,14 @@ struct DrinkThreeView: View {
             }
           }
         }//: LOOP
-        .navigationBarTitle("Best \(city.drink[2])")
+        .navigationBarTitle("Best \(city.drink[1])")
         .navigationBarItems(trailing:
                               HStack {
                                 Button(action: {
-                                  self.showingAddDrinkThreeView = true
+                                  self.showingAddDrinkTwoView = true
                                 }) {
                                   HStack {
-                                    Text("Add \(city.drink[2])")
+                                    Text("Add \(city.drink[1])")
                                       .foregroundColor(.black)
                                     Image(systemName: "plus")
                                       .foregroundColor(.black)
@@ -54,18 +60,19 @@ struct DrinkThreeView: View {
                               }
         )
         .onAppear() {
-          self.drinksVM.fetchDrinksThree()
+          self.drinksVM.fetchDrinksTwo()
         }
-        .sheet(isPresented: $showingAddDrinkThreeView) {
-          AddDrinkThreeView(city: city)
+        .sheet(isPresented: $showingAddDrinkTwoView) {
+          AddDrinkTwoView(city: city)
         }
       }//: LIST
     }//: NAV
   }
 }
 
-//struct DrinkThreeView_Previews: PreviewProvider {
+
+//struct DrinkTwoView_Previews: PreviewProvider {
 //  static var previews: some View {
-//    DrinkThreeView(city: cities[0])
+//    DrinkTwoView(city: cities[1])
 //  }
 //}

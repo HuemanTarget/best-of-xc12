@@ -10,11 +10,17 @@
       "ChicagoWhite",
       "NOLAGold"
     ],
+    "drinkImage": [
+      "sazerac",
+      "hurricane",
+      "pimmscup",
+      "ginfizz"
+    ],
     "drink": [
       "Sazerac",
       "Hurricane",
       "Pimms Cup",
-      "Dive Bar"
+      "Gin Fizz"
     ],
     "food": [
       "Gumbo",
@@ -23,10 +29,10 @@
       "Muffaletta"
     ],
     "attraction": [
-      "Tours",
-      "Jazz Clubs",
-      "Museums",
-      "Parade Krewe"
+      "Tour",
+      "Jazz Club",
+      "Museum",
+      "Dive Bar"
     ]
   },
   {
@@ -39,6 +45,12 @@
       "LAGreen",
       "ChicagoWhite",
       "LARed"
+    ],
+    "drinkImage": [
+      "sazerac",
+      "hurricane",
+      "pimmscup",
+      "ginfizz"
     ],
     "drink": [
       "Moscow Mule",
@@ -71,6 +83,12 @@
       "ChicagoWhite",
       "ChicagoRed"
     ],
+    "drinkImage": [
+      "sazerac",
+      "hurricane",
+      "pimmscup",
+      "ginfizz"
+    ],
     "drink": [
       "Moscow Mule",
       "The Zombie",
@@ -101,6 +119,12 @@
       "ChicagoWhite",
       "NYBlue"
     ],
+    "drinkImage": [
+      "sazerac",
+      "hurricane",
+      "pimmscup",
+      "ginfizz"
+    ],
     "drink": [
       "NY PH1",
       "NY PH2",
@@ -130,6 +154,12 @@
       "SeaBlue",
       "ChicagoWhite",
       "SeaBlue"
+    ],
+    "drinkImage": [
+      "sazerac",
+      "hurricane",
+      "pimmscup",
+      "ginfizz"
     ],
     "drink": [
       "SEA PH1",

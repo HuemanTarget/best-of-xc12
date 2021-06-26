@@ -20,7 +20,7 @@ struct FoodOneView: View {
   
   private func foodRowView(food: Food) -> some View {
     HStack {
-      Image(city.drinkImage[0])
+      Image(city.foodImage[0])
         .resizable()
         .scaledToFill()
         .frame(width: 60, height: 60)

@@ -20,7 +20,7 @@ struct AttractionFourView: View {
   
   private func attractionRowView(attraction: Attraction) -> some View {
     HStack {
-      Image(city.drinkImage[3])
+      Image(city.attractionImage[3])
         .resizable()
         .scaledToFill()
         .frame(width: 60, height: 60)

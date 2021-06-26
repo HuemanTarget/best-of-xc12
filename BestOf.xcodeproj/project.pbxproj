@@ -65,6 +65,7 @@
 		4EC8CF98268775F100011387 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8CF97268775F100011387 /* LoginView.swift */; };
 		4EC8CF9A2687760C00011387 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8CF992687760C00011387 /* RegistrationView.swift */; };
 		4EC8CF9C268777CD00011387 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8CF9B268777CD00011387 /* UserModel.swift */; };
+		4EC8CF9E26877B3C00011387 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8CF9D26877B3C00011387 /* AuthViewModel.swift */; };
 		4EFF9FB1268643740058D0AE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4EFF9FB0268643740058D0AE /* FirebaseFirestore */; };
 		4EFF9FB3268643740058D0AE /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 4EFF9FB2268643740058D0AE /* FirebaseFirestoreSwift-Beta */; };
 		4EFF9FB5268643740058D0AE /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 4EFF9FB4268643740058D0AE /* FirebaseAnalyticsSwift-Beta */; };
@@ -136,6 +137,7 @@
 		4EC8CF97268775F100011387 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4EC8CF992687760C00011387 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		4EC8CF9B268777CD00011387 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		4EC8CF9D26877B3C00011387 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -435,6 +437,7 @@
 			children = (
 				4EC8CF97268775F100011387 /* LoginView.swift */,
 				4EC8CF992687760C00011387 /* RegistrationView.swift */,
+				4EC8CF9D26877B3C00011387 /* AuthViewModel.swift */,
 			);
 			path = AuthViews;
 			sourceTree = "<group>";
@@ -563,6 +566,7 @@
 				4E9BB9C326790F77005475CF /* DrinkFourView.swift in Sources */,
 				4E9BB9E626791FE6005475CF /* AddFoodFourView.swift in Sources */,
 				4E9BBA0D267A4651005475CF /* DrinksListViewModel.swift in Sources */,
+				4EC8CF9E26877B3C00011387 /* AuthViewModel.swift in Sources */,
 				4EC8CF912687748100011387 /* CustomTextField.swift in Sources */,
 				4E9BB9D326791514005475CF /* AttractionThreeView.swift in Sources */,
 				4E9BB9AF2678F6AE005475CF /* CityView.swift in Sources */,

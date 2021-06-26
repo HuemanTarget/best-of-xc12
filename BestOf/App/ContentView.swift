@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+  @EnvironmentObject var authVM: AuthViewModel
+  
   var body: some View {
-    CityView()
+    Group {
+      if authVM.userSession != nil {
+        CityView()
+      } else {
+        LoginView()
+      }
+    }
   }
 }
 

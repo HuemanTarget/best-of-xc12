@@ -22,11 +22,23 @@
       "Pimms Cup",
       "Gin Fizz"
     ],
+    "foodImage": [
+      "gumbo",
+      "oysters",
+      "shrimpgrits",
+      "muffaletta"
+    ],
     "food": [
       "Gumbo",
       "Oysters",
       "Shrimp & Grits",
       "Muffaletta"
+    ],
+    "attractionImage": [
+      "tour",
+      "jazz",
+      "museum",
+      "dive"
     ],
     "attraction": [
       "Tour",
@@ -58,11 +70,23 @@
       "Lounge",
       "Dive Bar"
     ],
+    "foodImage": [
+      "gumbo",
+      "oysters",
+      "shrimpgrits",
+      "muffaletta"
+    ],
     "food": [
       "Tacos",
       "Burgers",
       "Chili Dogs",
       "Vegan"
+    ],
+    "attractionImage": [
+      "tour",
+      "jazz",
+      "museum",
+      "dive"
     ],
     "attraction": [
       "Amusment Park",
@@ -95,11 +119,23 @@
       "Lounge",
       "Dive Bar"
     ],
+    "foodImage": [
+      "gumbo",
+      "oysters",
+      "shrimpgrits",
+      "muffaletta"
+    ],
     "food": [
       "Tacos",
       "Burgers",
       "Chili Dogs",
       "Vegan"
+    ],
+    "attractionImage": [
+      "tour",
+      "jazz",
+      "museum",
+      "dive"
     ],
     "attraction": [
       "Amusment Park",
@@ -131,11 +167,23 @@
       "NY PH3",
       "NY PH4"
     ],
+    "foodImage": [
+      "gumbo",
+      "oysters",
+      "shrimpgrits",
+      "muffaletta"
+    ],
     "food": [
       "NY PHF1",
       "NY PHF2",
       "NY PHF3",
       "NY PHF4"
+    ],
+    "attractionImage": [
+      "tour",
+      "jazz",
+      "museum",
+      "dive"
     ],
     "attraction": [
       "NY PHA1",
@@ -167,11 +215,23 @@
       "SEA PH3",
       "SEA PH4"
     ],
+    "foodImage": [
+      "gumbo",
+      "oysters",
+      "shrimpgrits",
+      "muffaletta"
+    ],
     "food": [
       "SEA PHF1",
       "SEA PHF2",
       "SEA PHF3",
       "SEA PF4"
+    ],
+    "attractionImage": [
+      "tour",
+      "jazz",
+      "museum",
+      "dive"
     ],
     "attraction": [
       "SEA PHA1",

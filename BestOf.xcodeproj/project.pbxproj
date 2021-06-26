@@ -62,6 +62,8 @@
 		4EC8CF912687748100011387 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8CF902687748100011387 /* CustomTextField.swift */; };
 		4EC8CF932687751F00011387 /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8CF922687751F00011387 /* CustomSecureField.swift */; };
 		4EC8CF952687755A00011387 /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8CF942687755A00011387 /* TextArea.swift */; };
+		4EC8CF98268775F100011387 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8CF97268775F100011387 /* LoginView.swift */; };
+		4EC8CF9A2687760C00011387 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8CF992687760C00011387 /* RegistrationView.swift */; };
 		4EFF9FB1268643740058D0AE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4EFF9FB0268643740058D0AE /* FirebaseFirestore */; };
 		4EFF9FB3268643740058D0AE /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 4EFF9FB2268643740058D0AE /* FirebaseFirestoreSwift-Beta */; };
 		4EFF9FB5268643740058D0AE /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 4EFF9FB4268643740058D0AE /* FirebaseAnalyticsSwift-Beta */; };
@@ -130,6 +132,8 @@
 		4EC8CF902687748100011387 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		4EC8CF922687751F00011387 /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
 		4EC8CF942687755A00011387 /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
+		4EC8CF97268775F100011387 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4EC8CF992687760C00011387 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +228,7 @@
 		4E9BB9A02678EBC4005475CF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				4EC8CF96268775D200011387 /* AuthViews */,
 				4EC8CF83268693EB00011387 /* CityAllViews */,
 				4E9BB9C4267912B4005475CF /* DrinkViews */,
 				4E9BB9CD267913ED005475CF /* FoodViews */,
@@ -422,6 +427,15 @@
 			path = AttractionFourViews;
 			sourceTree = "<group>";
 		};
+		4EC8CF96268775D200011387 /* AuthViews */ = {
+			isa = PBXGroup;
+			children = (
+				4EC8CF97268775F100011387 /* LoginView.swift */,
+				4EC8CF992687760C00011387 /* RegistrationView.swift */,
+			);
+			path = AuthViews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -507,6 +521,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E9BB9DA26791DB4005475CF /* AddDrinkTwoView.swift in Sources */,
+				4EC8CF9A2687760C00011387 /* RegistrationView.swift in Sources */,
 				4E9BB9E826792120005475CF /* AddAttractionOneView.swift in Sources */,
 				4E9BB9D1267914EE005475CF /* AttractionTwoView.swift in Sources */,
 				4E9BB9912678EA9B005475CF /* ContentView.swift in Sources */,
@@ -516,6 +531,7 @@
 				4E9BB9E026791FAB005475CF /* AddFoodOneView.swift in Sources */,
 				4E9BB9DE26791DCD005475CF /* AddDrinkFourView.swift in Sources */,
 				4E9BB9C62679133C005475CF /* FoodOneView.swift in Sources */,
+				4EC8CF98268775F100011387 /* LoginView.swift in Sources */,
 				4EC8CF952687755A00011387 /* TextArea.swift in Sources */,
 				4E9BB9C126790F4B005475CF /* DrinkThreeView.swift in Sources */,
 				4E9BB9CC267913CB005475CF /* FoodFourView.swift in Sources */,

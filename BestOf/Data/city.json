@@ -59,16 +59,16 @@
       "LARed"
     ],
     "drinkImage": [
-      "sazerac",
-      "hurricane",
-      "pimmscup",
-      "ginfizz"
+      "mule",
+      "sangria",
+      "old",
+      "martini"
     ],
     "drink": [
       "Moscow Mule",
-      "The Zombie",
-      "Lounge",
-      "Dive Bar"
+      "Sangria",
+      "Old Fashioned",
+      "Martini"
     ],
     "foodImage": [
       "tacos",
@@ -108,16 +108,16 @@
       "ChicagoRed"
     ],
     "drinkImage": [
-      "sazerac",
-      "hurricane",
-      "pimmscup",
-      "ginfizz"
+      "sidecar",
+      "chibeer",
+      "cosmo",
+      "chifizz"
     ],
     "drink": [
-      "Moscow Mule",
-      "The Zombie",
-      "Lounge",
-      "Dive Bar"
+      "Sidecar",
+      "Local Beer",
+      "Cosmo",
+      "Chicago Fizz"
     ],
     "foodImage": [
       "deeppizza",
@@ -138,7 +138,7 @@
       "dive"
     ],
     "attraction": [
-      "Amusment Park",
+      "Comedy Club",
       "Music Venue",
       "Tourist Trap",
       "Tour"
@@ -156,16 +156,16 @@
       "NYBlue"
     ],
     "drinkImage": [
-      "sazerac",
-      "hurricane",
-      "pimmscup",
-      "ginfizz"
+      "manhattan",
+      "penicillin",
+      "mary",
+      "longisland"
     ],
     "drink": [
-      "NY PH1",
-      "NY PH2",
-      "NY PH3",
-      "NY PH4"
+      "Manhattan",
+      "Penicillin",
+      "Bloody Mary",
+      "Long Island"
     ],
     "foodImage": [
       "nypizza",
@@ -204,16 +204,16 @@
       "SeaBlue"
     ],
     "drinkImage": [
-      "sazerac",
-      "hurricane",
-      "pimmscup",
-      "ginfizz"
+      "coffee",
+      "craftbeer",
+      "pal",
+      "enzo"
     ],
     "drink": [
       "Coffee",
-      "SEA PH2",
-      "SEA PH3",
-      "SEA PH4"
+      "Craft Beer",
+      "Old Pal",
+      "Enzo"
     ],
     "foodImage": [
       "seafood",

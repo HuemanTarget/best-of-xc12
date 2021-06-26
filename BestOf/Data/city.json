@@ -71,16 +71,16 @@
       "Dive Bar"
     ],
     "foodImage": [
-      "gumbo",
-      "oysters",
-      "shrimpgrits",
-      "muffaletta"
+      "tacos",
+      "doughnuts",
+      "ramen",
+      "burger"
     ],
     "food": [
       "Tacos",
-      "Burgers",
-      "Chili Dogs",
-      "Vegan"
+      "Doughnuts",
+      "Ramen",
+      "Burgers"
     ],
     "attractionImage": [
       "tour",
@@ -120,16 +120,16 @@
       "Dive Bar"
     ],
     "foodImage": [
-      "gumbo",
-      "oysters",
-      "shrimpgrits",
-      "muffaletta"
+      "deeppizza",
+      "chicagodog",
+      "italianbeef",
+      "steak"
     ],
     "food": [
-      "Tacos",
-      "Burgers",
-      "Chili Dogs",
-      "Vegan"
+      "Pizza",
+      "Chicago Dog",
+      "Italian Beef",
+      "Steak"
     ],
     "attractionImage": [
       "tour",
@@ -168,16 +168,16 @@
       "NY PH4"
     ],
     "foodImage": [
-      "gumbo",
-      "oysters",
-      "shrimpgrits",
-      "muffaletta"
+      "nypizza",
+      "bagel",
+      "deli",
+      "ice"
     ],
     "food": [
-      "NY PHF1",
-      "NY PHF2",
-      "NY PHF3",
-      "NY PHF4"
+      "Pizza",
+      "Bagel",
+      "Deli",
+      "Italian Ice"
     ],
     "attractionImage": [
       "tour",
@@ -210,22 +210,22 @@
       "ginfizz"
     ],
     "drink": [
-      "SEA PH1",
+      "Coffee",
       "SEA PH2",
       "SEA PH3",
       "SEA PH4"
     ],
     "foodImage": [
-      "gumbo",
-      "oysters",
-      "shrimpgrits",
-      "muffaletta"
+      "seafood",
+      "pho",
+      "seattledog",
+      "chowder"
     ],
     "food": [
-      "SEA PHF1",
-      "SEA PHF2",
-      "SEA PHF3",
-      "SEA PF4"
+      "Seafood",
+      "Pho",
+      "Seattle Dog",
+      "Chowder"
     ],
     "attractionImage": [
       "tour",

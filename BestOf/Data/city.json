@@ -83,17 +83,16 @@
       "Burgers"
     ],
     "attractionImage": [
-      "tour",
-      "jazz",
-      "museum",
-      "dive"
+      "park",
+      "lamusic",
+      "latrap",
+      "celeb"
     ],
     "attraction": [
       "Amusment Park",
       "Music Venue",
       "Tourist Trap",
-      "Celebrity Spot",
-      "Tour"
+      "Celebrity Spot"
     ]
   },
   {
@@ -132,14 +131,14 @@
       "Steak"
     ],
     "attractionImage": [
-      "tour",
-      "jazz",
+      "comedy",
       "museum",
-      "dive"
+      "chitrap",
+      "chitour"
     ],
     "attraction": [
       "Comedy Club",
-      "Music Venue",
+      "Museum",
       "Tourist Trap",
       "Tour"
     ]
@@ -180,16 +179,16 @@
       "Italian Ice"
     ],
     "attractionImage": [
-      "tour",
-      "jazz",
       "museum",
-      "dive"
+      "nytour",
+      "nytrap",
+      "broadway"
     ],
     "attraction": [
-      "NY PHA1",
-      "NY PHA2",
-      "NY PHA3",
-      "NY PHA4"
+      "Museum",
+      "Tour",
+      "Tourist Trap",
+      "Broadway Venue"
     ]
   },
   {
@@ -228,16 +227,16 @@
       "Chowder"
     ],
     "attractionImage": [
-      "tour",
-      "jazz",
       "museum",
-      "dive"
+      "seatour",
+      "seatrap",
+      "wine"
     ],
     "attraction": [
-      "SEA PHA1",
-      "SEA PHA2",
-      "SEA PHA3",
-      "SEA PHA4"
+      "Museum",
+      "Tour",
+      "Tourist Trap",
+      "Winery"
     ]
   }
 ]

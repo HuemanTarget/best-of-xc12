@@ -20,7 +20,7 @@ class FoodListViewModel: ObservableObject {
   }
   
   func fetchFoodOne() {
-    let foodOne = db.collection(city.name).document(city.id).collection(city.food[0])
+    let foodOne = db.collection(city.name).document(city.id).collection(city.food[0]).order(by: "votes", descending: true)
     
     foodOne.addSnapshotListener { snapshot, error in
       guard let documents = snapshot?.documents else {
@@ -35,7 +35,7 @@ class FoodListViewModel: ObservableObject {
   }
   
   func fetchFoodTwo() {
-    let foodTwo = db.collection(city.name).document(city.id).collection(city.food[1])
+    let foodTwo = db.collection(city.name).document(city.id).collection(city.food[1]).order(by: "votes", descending: true)
     
     foodTwo.addSnapshotListener { snapshot, error in
       guard let documents = snapshot?.documents else {
@@ -50,7 +50,7 @@ class FoodListViewModel: ObservableObject {
   }
   
   func fetchFoodThree() {
-    let foodThree = db.collection(city.name).document(city.id).collection(city.food[2])
+    let foodThree = db.collection(city.name).document(city.id).collection(city.food[2]).order(by: "votes", descending: true)
     
     foodThree.addSnapshotListener { snapshot, error in
       guard let documents = snapshot?.documents else {
@@ -65,7 +65,7 @@ class FoodListViewModel: ObservableObject {
   }
   
   func fetchFoodFour() {
-    let foodFour = db.collection(city.name).document(city.id).collection(city.food[3])
+    let foodFour = db.collection(city.name).document(city.id).collection(city.food[3]).order(by: "votes", descending: true)
     
     foodFour.addSnapshotListener { snapshot, error in
       guard let documents = snapshot?.documents else {

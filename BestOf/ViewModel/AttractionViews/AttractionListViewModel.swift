@@ -20,7 +20,7 @@ class AttractionListViewModel: ObservableObject {
   }
   
   func fetchAttractionOne() {
-    let attractionOne = db.collection(city.name).document(city.id).collection(city.attraction[0])
+    let attractionOne = db.collection(city.name).document(city.id).collection(city.attraction[0]).order(by: "votes", descending: true)
     
     attractionOne.addSnapshotListener { snapshot, error in
       guard let documents = snapshot?.documents else {
@@ -35,7 +35,7 @@ class AttractionListViewModel: ObservableObject {
   }
   
   func fetchAttractionTwo() {
-    let attractionTwo = db.collection(city.name).document(city.id).collection(city.attraction[1])
+    let attractionTwo = db.collection(city.name).document(city.id).collection(city.attraction[1]).order(by: "votes", descending: true)
     
     attractionTwo.addSnapshotListener { snapshot, error in
       guard let documents = snapshot?.documents else {
@@ -50,7 +50,7 @@ class AttractionListViewModel: ObservableObject {
   }
   
   func fetchAttractionThree() {
-    let attractionThree = db.collection(city.name).document(city.id).collection(city.attraction[2])
+    let attractionThree = db.collection(city.name).document(city.id).collection(city.attraction[2]).order(by: "votes", descending: true)
     
     attractionThree.addSnapshotListener { snapshot, error in
       guard let documents = snapshot?.documents else {
@@ -65,7 +65,7 @@ class AttractionListViewModel: ObservableObject {
   }
   
   func fetchAttractionFour() {
-    let attractionFour = db.collection(city.name).document(city.id).collection(city.attraction[3])
+    let attractionFour = db.collection(city.name).document(city.id).collection(city.attraction[3]).order(by: "votes", descending: true)
     
     attractionFour.addSnapshotListener { snapshot, error in
       guard let documents = snapshot?.documents else {

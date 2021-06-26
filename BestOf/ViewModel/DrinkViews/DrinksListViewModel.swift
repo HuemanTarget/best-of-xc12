@@ -20,7 +20,7 @@ class DrinksListViewModel: ObservableObject {
   }
   
   func fetchDrinksOne() {
-    let drinkOne = db.collection(city.name).document(city.id).collection(city.drink[0])
+    let drinkOne = db.collection(city.name).document(city.id).collection(city.drink[0]).order(by: "votes", descending: true)
     
     drinkOne.addSnapshotListener { snapshot, error in
       guard let documents = snapshot?.documents else {
@@ -35,7 +35,7 @@ class DrinksListViewModel: ObservableObject {
   }
   
   func fetchDrinksTwo() {
-    let drinkOne = db.collection(city.name).document(city.id).collection(city.drink[1])
+    let drinkOne = db.collection(city.name).document(city.id).collection(city.drink[1]).order(by: "votes", descending: true)
     
     drinkOne.addSnapshotListener { snapshot, error in
       guard let documents = snapshot?.documents else {
@@ -50,7 +50,7 @@ class DrinksListViewModel: ObservableObject {
   }
   
   func fetchDrinksThree() {
-    let drinkOne = db.collection(city.name).document(city.id).collection(city.drink[2])
+    let drinkOne = db.collection(city.name).document(city.id).collection(city.drink[2]).order(by: "votes", descending: true)
     
     drinkOne.addSnapshotListener { snapshot, error in
       guard let documents = snapshot?.documents else {
@@ -65,7 +65,7 @@ class DrinksListViewModel: ObservableObject {
   }
   
   func fetchDrinksFour() {
-    let drinkOne = db.collection(city.name).document(city.id).collection(city.drink[3])
+    let drinkOne = db.collection(city.name).document(city.id).collection(city.drink[3]).order(by: "votes", descending: true)
     
     drinkOne.addSnapshotListener { snapshot, error in
       guard let documents = snapshot?.documents else {
@@ -78,80 +78,4 @@ class DrinksListViewModel: ObservableObject {
       })
     }
   }
-  
-  
-//  func fetchNolaDrinksOne() {
-//    let nolaDrinkOne = db.collection("New Orleans").document("nola").collection("Sazerac")
-//
-//    nolaDrinkOne.addSnapshotListener { snapshot, error in
-//      guard let documents = snapshot?.documents else {
-//        print("No Documents")
-//        return
-//      }
-//
-//      self.drinks = documents.compactMap({ queryDocumentSnapshot -> Drink? in
-//        return try? queryDocumentSnapshot.data(as: Drink.self)
-//      })
-//    }
-//  }
-//
-//  func fetchNolaDrinksTwo() {
-//    let nolaDrinkTwo = db.collection("New Orleans").document("nola").collection("Hurricane")
-//
-//    nolaDrinkTwo.addSnapshotListener { snapshot, error in
-//      guard let documents = snapshot?.documents else {
-//        print("No Documents")
-//        return
-//      }
-//
-//      self.drinks = documents.compactMap({ queryDocumentSnapshot -> Drink? in
-//        return try? queryDocumentSnapshot.data(as: Drink.self)
-//      })
-//    }
-//  }
-//
-//  func fetchNolaDrinksThree() {
-//    let nolaDrinkThree = db.collection("New Orleans").document("nola").collection("Pimms Cup")
-//
-//    nolaDrinkThree.addSnapshotListener { snapshot, error in
-//      guard let documents = snapshot?.documents else {
-//        print("No Documents")
-//        return
-//      }
-//
-//      self.drinks = documents.compactMap({ queryDocumentSnapshot -> Drink? in
-//        return try? queryDocumentSnapshot.data(as: Drink.self)
-//      })
-//    }
-//  }
-//
-//  func fetchNolaDrinksFour() {
-//    let nolaDrinkFour = db.collection("New Orleans").document("nola").collection("Dive Bar")
-//
-//    nolaDrinkFour.addSnapshotListener { snapshot, error in
-//      guard let documents = snapshot?.documents else {
-//        print("No Documents")
-//        return
-//      }
-//
-//      self.drinks = documents.compactMap({ queryDocumentSnapshot -> Drink? in
-//        return try? queryDocumentSnapshot.data(as: Drink.self)
-//      })
-//    }
-//  }
-//
-//  func fetchLADrinksOne() {
-//    let laDrinkOne = db.collection("Los Angeles").document("la").collection("Moscow Mule")
-//
-//    laDrinkOne.addSnapshotListener { snapshot, error in
-//      guard let documents = snapshot?.documents else {
-//        print("No Documents")
-//        return
-//      }
-//
-//      self.drinks = documents.compactMap({ queryDocumentSnapshot -> Drink? in
-//        return try? queryDocumentSnapshot.data(as: Drink.self)
-//      })
-//    }
-//  }
 }

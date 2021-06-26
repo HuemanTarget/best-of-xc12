@@ -59,6 +59,7 @@
 		4EC8CF872686945D00011387 /* AttractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8CF862686945D00011387 /* AttractionView.swift */; };
 		4EC8CF89268694B600011387 /* FoodListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8CF88268694B600011387 /* FoodListViewModel.swift */; };
 		4EC8CF8F26869D0900011387 /* AttractionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8CF8E26869D0900011387 /* AttractionListViewModel.swift */; };
+		4EC8CF912687748100011387 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8CF902687748100011387 /* CustomTextField.swift */; };
 		4EFF9FB1268643740058D0AE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4EFF9FB0268643740058D0AE /* FirebaseFirestore */; };
 		4EFF9FB3268643740058D0AE /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 4EFF9FB2268643740058D0AE /* FirebaseFirestoreSwift-Beta */; };
 		4EFF9FB5268643740058D0AE /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 4EFF9FB4268643740058D0AE /* FirebaseAnalyticsSwift-Beta */; };
@@ -124,6 +125,7 @@
 		4EC8CF862686945D00011387 /* AttractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionView.swift; sourceTree = "<group>"; };
 		4EC8CF88268694B600011387 /* FoodListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListViewModel.swift; sourceTree = "<group>"; };
 		4EC8CF8E26869D0900011387 /* AttractionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionListViewModel.swift; sourceTree = "<group>"; };
+		4EC8CF902687748100011387 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +253,7 @@
 				4E9BB9A82678F33B005475CF /* Constant.swift */,
 				4E9BBA06267A42E3005475CF /* ImagePicker.swift */,
 				4E9BBA08267A4355005475CF /* SourceType.swift */,
+				4EC8CF902687748100011387 /* CustomTextField.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -532,6 +535,7 @@
 				4E9BB9C326790F77005475CF /* DrinkFourView.swift in Sources */,
 				4E9BB9E626791FE6005475CF /* AddFoodFourView.swift in Sources */,
 				4E9BBA0D267A4651005475CF /* DrinksListViewModel.swift in Sources */,
+				4EC8CF912687748100011387 /* CustomTextField.swift in Sources */,
 				4E9BB9D326791514005475CF /* AttractionThreeView.swift in Sources */,
 				4E9BB9AF2678F6AE005475CF /* CityView.swift in Sources */,
 				4E9BB9F0267951CA005475CF /* GlowBorder+Extension.swift in Sources */,

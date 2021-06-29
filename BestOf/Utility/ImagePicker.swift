@@ -26,7 +26,7 @@ class ImagePickerCoordinator: NSObject, UINavigationControllerDelegate, UIImageP
     image = Image(uiImage: uiImage)
     isShown = false
     originalImage = uiImage
-    
+    print(originalImage)
   }
   
   func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {

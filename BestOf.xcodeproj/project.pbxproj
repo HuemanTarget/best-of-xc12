@@ -62,6 +62,8 @@
 		4EA168F326A5F82B00D025AF /* DrinkTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA168F226A5F82B00D025AF /* DrinkTest.swift */; };
 		4EA168F526A5F9D000D025AF /* UploadDrinkOneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA168F426A5F9D000D025AF /* UploadDrinkOneViewModel.swift */; };
 		4EA168F726A60C4300D025AF /* DrinkOneVoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA168F626A60C4300D025AF /* DrinkOneVoteViewModel.swift */; };
+		4EA168F926A620D400D025AF /* DrinkImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA168F826A620D300D025AF /* DrinkImageViewModel.swift */; };
+		4EA168FC26A6285F00D025AF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4EA168FB26A6285F00D025AF /* Kingfisher */; };
 		4EC8CF7E268684E300011387 /* DrinkOneDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8CF7D268684E300011387 /* DrinkOneDetailView.swift */; };
 		4EC8CF852686943900011387 /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8CF842686943900011387 /* FoodModel.swift */; };
 		4EC8CF872686945D00011387 /* AttractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8CF862686945D00011387 /* AttractionView.swift */; };
@@ -128,6 +130,7 @@
 		4EA168F226A5F82B00D025AF /* DrinkTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkTest.swift; sourceTree = "<group>"; };
 		4EA168F426A5F9D000D025AF /* UploadDrinkOneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadDrinkOneViewModel.swift; sourceTree = "<group>"; };
 		4EA168F626A60C4300D025AF /* DrinkOneVoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkOneVoteViewModel.swift; sourceTree = "<group>"; };
+		4EA168F826A620D300D025AF /* DrinkImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkImageViewModel.swift; sourceTree = "<group>"; };
 		4EC8CF7D268684E300011387 /* DrinkOneDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkOneDetailView.swift; sourceTree = "<group>"; };
 		4EC8CF842686943900011387 /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
 		4EC8CF862686945D00011387 /* AttractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionView.swift; sourceTree = "<group>"; };
@@ -149,6 +152,7 @@
 			files = (
 				4EA168E726A5E93B00D025AF /* FirebaseFunctions in Frameworks */,
 				4EA168E926A5E93B00D025AF /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				4EA168FC26A6285F00D025AF /* Kingfisher in Frameworks */,
 				4EA168EB26A5E93B00D025AF /* FirebaseStorage in Frameworks */,
 				4EA168EF26A5E93B00D025AF /* FirebaseFirestore in Frameworks */,
 				4EA168ED26A5E93B00D025AF /* FirebaseAuth in Frameworks */,
@@ -282,6 +286,7 @@
 				4EC8CF7B2686843E00011387 /* DrinkThreeViews */,
 				4EC8CF7C2686844D00011387 /* DrinkFourViews */,
 				4E9BBA0C267A4651005475CF /* DrinksListViewModel.swift */,
+				4EA168F826A620D300D025AF /* DrinkImageViewModel.swift */,
 			);
 			path = DrinkViews;
 			sourceTree = "<group>";
@@ -467,6 +472,7 @@
 				4EA168EC26A5E93B00D025AF /* FirebaseAuth */,
 				4EA168EE26A5E93B00D025AF /* FirebaseFirestore */,
 				4EA168F026A5E93B00D025AF /* FirebaseStorageSwift-Beta */,
+				4EA168FB26A6285F00D025AF /* Kingfisher */,
 			);
 			productName = BestOf;
 			productReference = 4E9BB98B2678EA9B005475CF /* BestOf.app */;
@@ -497,6 +503,7 @@
 			mainGroup = 4E9BB9822678EA9B005475CF;
 			packageReferences = (
 				4EA168E526A5E93B00D025AF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				4EA168FA26A6285F00D025AF /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 4E9BB98C2678EA9B005475CF /* Products */;
 			projectDirPath = "";
@@ -533,6 +540,7 @@
 				4E9BB9912678EA9B005475CF /* ContentView.swift in Sources */,
 				4E9BB9D826791B46005475CF /* AddDrinkOneView.swift in Sources */,
 				4E9BB9B52678FE5F005475CF /* CityTabView.swift in Sources */,
+				4EA168F926A620D400D025AF /* DrinkImageViewModel.swift in Sources */,
 				4E9BB9EA2679214A005475CF /* AddAttractionTwoView.swift in Sources */,
 				4E9BB9E026791FAB005475CF /* AddFoodOneView.swift in Sources */,
 				4E9BB9DE26791DCD005475CF /* AddDrinkFourView.swift in Sources */,
@@ -781,6 +789,14 @@
 				minimumVersion = 8.3.1;
 			};
 		};
+		4EA168FA26A6285F00D025AF /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -813,6 +829,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4EA168E526A5E93B00D025AF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageSwift-Beta";
+		};
+		4EA168FB26A6285F00D025AF /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EA168FA26A6285F00D025AF /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

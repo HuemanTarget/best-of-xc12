@@ -11,6 +11,7 @@ struct DrinkOneDetailView: View {
   let drink: DrinkTest
   let city: City
   @ObservedObject var drinkOneVoteVM: DrinkOneVoteViewModel
+  @ObservedObject var drinkImageVM: DrinkImageViewModel
   
   @State var showImagePicker: Bool = false
   @State var selectedUIImage: UIImage?
@@ -20,11 +21,13 @@ struct DrinkOneDetailView: View {
     self.drink = drink
     self.city = city
     self.drinkOneVoteVM = DrinkOneVoteViewModel(drink: drink, city: city)
+    self.drinkImageVM = DrinkImageViewModel(city: city, drink: drink)
   }
   
   func loadImage() {
     guard let selectedImage = selectedUIImage else { return }
     image = Image(uiImage: selectedImage)
+    drinkImageVM.saveDrinkOneImage(image: selectedImage)
   }
   
   var body: some View {

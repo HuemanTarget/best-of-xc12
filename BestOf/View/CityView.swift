@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct CityView: View {
   @EnvironmentObject var authVM: AuthViewModel
@@ -23,15 +24,15 @@ struct CityView: View {
       .navigationBarItems(leading: Button(action: {
         authVM.signOut()
       }) {
-        Image(systemName: "plus")
-//        if let user = authVM.user {
-//          KFImage(URL(string: user.profileImageUrl))
-//            .resizable()
-//            .scaledToFill()
-//            .clipped()
-//            .frame(width: 32, height: 32)
-//            .cornerRadius(16)
-//        }
+        //        Image(systemName: "plus")
+        if let user = authVM.user {
+          KFImage(URL(string: user.profileImageUrl))
+            .resizable()
+            .scaledToFill()
+            .clipped()
+            .frame(width: 32, height: 32)
+            .cornerRadius(16)
+        }
       })
       .navigationBarTitle("Cities", displayMode: .inline)
     }

@@ -15,46 +15,46 @@ struct RegistrationView: View {
   @State var password: String = ""
   @State var username: String = ""
   @State var fullname: String = ""
-//  @State var showImagePicker: Bool = false
-//  @State var selectedUIImage: UIImage?
-//  @State var image: Image?
+  @State var showImagePicker: Bool = false
+  @State var selectedUIImage: UIImage?
+  @State var image: Image?
   
-//  func loadImage() {
-//    guard let selectedImage = selectedUIImage else { return }
-//    image = Image(uiImage: selectedImage)
-//  }
+  func loadImage() {
+    guard let selectedImage = selectedUIImage else { return }
+    image = Image(uiImage: selectedImage)
+  }
   
   var body: some View {
     ZStack {
       VStack {
         Button(action: {
-//          showImagePicker.toggle()
+          showImagePicker.toggle()
         }) {
           ZStack {
-//            if let image = image {
-//              image
-//                .resizable()
-//                .scaledToFill()
-//                .frame(width: 140, height: 140)
-//                .clipped()
-//                .cornerRadius(70)
-//                .padding(.top, 88)
-//                .padding(.bottom, 16)
-//            } else {
-//              Image("plus_photo")
-//                .resizable()
-//                .renderingMode(.template)
-//                .scaledToFill()
-//                .frame(width: 140, height: 140)
-//                .padding(.top, 88)
-//                .padding(.bottom, 16)
-//                .foregroundColor(.white)
-//            }
+            if let image = image {
+              image
+                .resizable()
+                .scaledToFill()
+                .frame(width: 140, height: 140)
+                .clipped()
+                .cornerRadius(70)
+                .padding(.top, 88)
+                .padding(.bottom, 16)
+            } else {
+              Image("plus_photo")
+                .resizable()
+                .renderingMode(.template)
+                .scaledToFill()
+                .frame(width: 140, height: 140)
+                .padding(.top, 88)
+                .padding(.bottom, 16)
+                .foregroundColor(.white)
+            }
           }
         }
-//        .sheet(isPresented: $showImagePicker, onDismiss: loadImage, content: {
-//          ImagePicker(image: $selectedUIImage)
-//        })
+        .sheet(isPresented: $showImagePicker, onDismiss: loadImage, content: {
+          ImagePicker(image: $selectedUIImage)
+        })
         
         VStack(spacing: 20) {
           CustomTextField(text: $fullname, placeholder: Text("Full Name"), imageName: "person")
@@ -84,11 +84,11 @@ struct RegistrationView: View {
         .padding(.horizontal, 32)
         
         Button(action: {
-//          guard let image = selectedUIImage else { return }
-//
-//          authVM.registerUser(email: email, password: password, username: username, fullname: fullname, profileImage: image)
+          guard let image = selectedUIImage else { return }
           
-//          presentationMode.wrappedValue.dismiss()
+          authVM.registerUser(email: email, password: password, username: username, fullname: fullname, profileImage: image)
+          
+          //          presentationMode.wrappedValue.dismiss()
         }) {
           Text("Sign Up")
             .font(.headline)

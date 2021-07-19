@@ -36,6 +36,9 @@ struct DrinkOneView: View {
           Text(drink.address)
             .foregroundColor(.gray)
             .font(.subheadline)
+          Text(drink.username)
+            .foregroundColor(.gray)
+            .font(.footnote)
         }
         
         Spacer()

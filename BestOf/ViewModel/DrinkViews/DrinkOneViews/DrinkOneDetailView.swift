@@ -16,7 +16,7 @@ struct DrinkOneDetailView: View {
       Image(systemName: "plus.circle")
         .resizable()
         .scaledToFill()
-        .frame(width: 200, height: 200)
+        .frame(width: 100, height: 100)
         .clipShape(Circle())
       
 //      Text("\(city.name) - \(city.drink[0])")
@@ -27,6 +27,7 @@ struct DrinkOneDetailView: View {
           .font(.system(size: 25, weight: .semibold))
         Text(drink.address)
           .font(.system(size: 25, weight: .semibold))
+        Text("Submitted by: \(drink.username)")
       }
       
       VStack {

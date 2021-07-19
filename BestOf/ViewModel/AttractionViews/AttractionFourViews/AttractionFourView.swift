@@ -19,26 +19,29 @@ struct AttractionFourView: View {
   }
   
   private func attractionRowView(attraction: Attraction) -> some View {
-    HStack {
-      Image(city.attractionImage[3])
-        .resizable()
-        .scaledToFill()
-        .frame(width: 60, height: 60)
-        .clipped()
-        .cornerRadius(30)
-      VStack(alignment: .leading) {
-        Text(attraction.location)
-          .font(.headline)
-        Text(attraction.address)
-          .font(.subheadline)
+    VStack {
+      HStack {
+        Image(city.attractionImage[3])
+          .resizable()
+          .scaledToFill()
+          .frame(width: 60, height: 60)
+          .clipped()
+          .cornerRadius(30)
+        VStack(alignment: .leading) {
+          Text(attraction.location)
+            .font(.headline)
+          Text(attraction.address)
+            .font(.subheadline)
+        }
+        
+        Spacer()
+        
+        VStack {
+          Text("\(attraction.votes)")
+          Text("Votes")
+        }
       }
-      
-      Spacer()
-      
-      VStack {
-        Text("\(attraction.votes)")
-        Text("Votes")
-      }
+      Divider()
     }
   }
   

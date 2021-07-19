@@ -19,26 +19,29 @@ struct AttractionOneView: View {
   }
   
   private func attractionRowView(attraction: Attraction) -> some View {
-    HStack {
-      Image(city.attractionImage[0])
-        .resizable()
-        .scaledToFill()
-        .frame(width: 60, height: 60)
-        .clipped()
-        .cornerRadius(30)
-      VStack(alignment: .leading) {
-        Text(attraction.location)
-          .font(.headline)
-        Text(attraction.address)
-          .font(.subheadline)
+    VStack {
+      HStack {
+        Image(city.attractionImage[0])
+          .resizable()
+          .scaledToFill()
+          .frame(width: 60, height: 60)
+          .clipped()
+          .cornerRadius(30)
+        VStack(alignment: .leading) {
+          Text(attraction.location)
+            .font(.headline)
+          Text(attraction.address)
+            .font(.subheadline)
+        }
+        
+        Spacer()
+        
+        VStack {
+          Text("\(attraction.votes)")
+          Text("Votes")
+        }
       }
-      
-      Spacer()
-      
-      VStack {
-        Text("\(attraction.votes)")
-        Text("Votes")
-      }
+      Divider()
     }
   }
   
@@ -47,7 +50,7 @@ struct AttractionOneView: View {
       List {
         ForEach(attractionVM.attractions) { attraction in
           
-            attractionRowView(attraction: attraction)
+          attractionRowView(attraction: attraction)
           
         }
         .navigationBarTitle("Best \(city.attraction[0])")

@@ -21,27 +21,33 @@ struct DrinkOneView: View {
   }
   
   private func drinkRowView(drink: Drink) -> some View {
-    HStack {
-      Image(city.drinkImage[0])
-        .resizable()
-        .scaledToFill()
-        .frame(width: 60, height: 60)
-        .clipped()
-        .cornerRadius(30)
-      VStack(alignment: .leading) {
-        Text(drink.location)
-          .font(.headline)
-        Text(drink.address)
-          .font(.subheadline)
+    VStack {
+      HStack {
+        Image(city.drinkImage[0])
+          .resizable()
+          .scaledToFill()
+          .frame(width: 60, height: 60)
+          .clipped()
+          .cornerRadius(30)
+        VStack(alignment: .leading) {
+          Text(drink.location)
+            .font(.headline)
+          Text(drink.address)
+            .font(.subheadline)
+        }
+        
+        Spacer()
+        
+        VStack {
+          Text("\(drink.votes)")
+          Text("Votes")
+        }
       }
       
-      Spacer()
+      Divider()
       
-      VStack {
-        Text("\(drink.votes)")
-        Text("Votes")
-      }
     }
+    
   }
   
   var body: some View {
@@ -70,11 +76,11 @@ struct DrinkOneView: View {
         .onAppear() {
           self.drinksVM.fetchDrinksOne()
         }
-        .listStyle(PlainListStyle())
         .sheet(isPresented: $showingAddDrinkOneView) {
           AddDrinkOneView(city: city)
         }
       } //: LIST
+      .listStyle(PlainListStyle())
     } //: NAV
   }
 }

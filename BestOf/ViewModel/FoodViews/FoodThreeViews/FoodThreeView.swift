@@ -19,26 +19,29 @@ struct FoodThreeView: View {
   }
   
   private func foodRowView(food: Food) -> some View {
-    HStack {
-      Image(city.foodImage[2])
-        .resizable()
-        .scaledToFill()
-        .frame(width: 60, height: 60)
-        .clipped()
-        .cornerRadius(30)
-      VStack(alignment: .leading) {
-        Text(food.location)
-          .font(.headline)
-        Text(food.address)
-          .font(.subheadline)
+    VStack {
+      HStack {
+        Image(city.foodImage[2])
+          .resizable()
+          .scaledToFill()
+          .frame(width: 60, height: 60)
+          .clipped()
+          .cornerRadius(30)
+        VStack(alignment: .leading) {
+          Text(food.location)
+            .font(.headline)
+          Text(food.address)
+            .font(.subheadline)
+        }
+        
+        Spacer()
+        
+        VStack {
+          Text("\(food.votes)")
+          Text("Votes")
+        }
       }
-      
-      Spacer()
-      
-      VStack {
-        Text("\(food.votes)")
-        Text("Votes")
-      }
+      Divider()
     }
   }
   

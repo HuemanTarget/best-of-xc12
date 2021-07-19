@@ -20,7 +20,7 @@ struct DrinkOneView: View {
     self.drinksVM = DrinksListViewModel(city: city)
   }
   
-  private func drinkRowView(drink: Drink) -> some View {
+  private func drinkRowView(drink: DrinkTest) -> some View {
     VStack {
       HStack {
         Image(city.drinkImage[0])
@@ -31,8 +31,10 @@ struct DrinkOneView: View {
           .cornerRadius(30)
         VStack(alignment: .leading) {
           Text(drink.location)
+            .foregroundColor(.black)
             .font(.headline)
           Text(drink.address)
+            .foregroundColor(.gray)
             .font(.subheadline)
         }
         
@@ -40,7 +42,9 @@ struct DrinkOneView: View {
         
         VStack {
           Text("\(drink.votes)")
+            .foregroundColor(.black)
           Text("Votes")
+            .foregroundColor(.black)
         }
       }
       
@@ -52,33 +56,38 @@ struct DrinkOneView: View {
   
   var body: some View {
     NavigationView {
-      List {
-        ForEach(drinksVM.drinks) { drink in
-          
-            drinkRowView(drink: drink)
-          
-        }
-        .navigationBarTitle("Best \(city.drink[0])")
-        .navigationBarItems(trailing:
-                              HStack {
-                                Button(action: {
-                                  self.showingAddDrinkOneView = true
-                                }) {
-                                  HStack {
-                                    Text("Add \(city.drink[0])")
-                                      .foregroundColor(.black)
-                                    Image(systemName: "plus")
-                                      .foregroundColor(.black)
+      ScrollView {
+        VStack {
+          ForEach(drinksVM.drinks) { drink in
+            
+            NavigationLink(destination: DrinkOneDetailView(drink: drink)) {
+              drinkRowView(drink: drink)
+            }
+            
+          }
+          .navigationBarTitle("Best \(city.drink[0])")
+          .navigationBarItems(trailing:
+                                HStack {
+                                  Button(action: {
+                                    self.showingAddDrinkOneView = true
+                                  }) {
+                                    HStack {
+                                      Text("Add \(city.drink[0])")
+                                        .foregroundColor(.black)
+                                      Image(systemName: "plus")
+                                        .foregroundColor(.black)
+                                    }
                                   }
                                 }
-                              }
-        )
-        .onAppear() {
-          self.drinksVM.fetchDrinksOne()
+          )
+          .onAppear() {
+            self.drinksVM.fetchDrinksOne()
+          }
+          .sheet(isPresented: $showingAddDrinkOneView) {
+            AddDrinkOneView(city: city)
         }
-        .sheet(isPresented: $showingAddDrinkOneView) {
-          AddDrinkOneView(city: city)
         }
+        .padding(.horizontal)
       } //: LIST
       .listStyle(PlainListStyle())
     } //: NAV

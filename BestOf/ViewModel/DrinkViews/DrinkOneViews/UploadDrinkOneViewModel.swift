@@ -16,7 +16,7 @@ class UploadDrinkOneViewModel: ObservableObject {
     self.city = city
   }
   
-  func uploadTweet(location: String, address: String) {
+  func uploadDrinkOne(location: String, address: String) {
     guard let user = AuthViewModel.shared.user else { return }
     let docRef = db.collection("\(city.name)").document(city.id).collection("\(city.drink[0])").document()
     

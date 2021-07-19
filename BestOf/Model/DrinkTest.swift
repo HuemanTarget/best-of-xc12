@@ -7,7 +7,7 @@
 
 import Firebase
 
-struct DrinkTest: Identifiable {
+struct DrinkTest: Identifiable, Decodable {
   let id: String
   let username: String
   let address: String

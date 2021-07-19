@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DrinkOneDetailView: View {
   
-  let drink: Drink
+  let drink: DrinkTest
   
   var body: some View {
     VStack(spacing: 20) {
@@ -42,8 +42,8 @@ struct DrinkOneDetailView: View {
   }
 }
 
-struct DrinkOneDetailView_Previews: PreviewProvider {
-  static var previews: some View {
-    DrinkOneDetailView(drink: Drink(location: "Awesome Bar", address: "123 Anywhere Street", votes: 0))
-  }
-}
+//struct DrinkOneDetailView_Previews: PreviewProvider {
+//  static var previews: some View {
+//    DrinkOneDetailView(drink: drink)
+//  }
+//}

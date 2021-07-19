@@ -11,12 +11,17 @@ import FirebaseFirestoreSwift
 
 class DrinksListViewModel: ObservableObject {
   let city: City
-  @Published var drinks = [Drink]()
+  @Published var drinks = [DrinkTest]()
+//  @Published var drink = [DrinkTest]()
   
   private var db = Firestore.firestore()
   
   init(city: City) {
     self.city = city
+    fetchDrinksOne()
+    fetchDrinksTwo()
+    fetchDrinksThree()
+    fetchDrinksFour()
   }
   
   func fetchDrinksOne() {
@@ -28,8 +33,8 @@ class DrinksListViewModel: ObservableObject {
         return
       }
       
-      self.drinks = documents.compactMap({ queryDocumentSnapshot -> Drink? in
-        return try? queryDocumentSnapshot.data(as: Drink.self)
+      self.drinks = documents.compactMap({ queryDocumentSnapshot -> DrinkTest? in
+        return try? queryDocumentSnapshot.data(as: DrinkTest.self)
       })
     }
   }
@@ -43,8 +48,8 @@ class DrinksListViewModel: ObservableObject {
         return
       }
       
-      self.drinks = documents.compactMap({ queryDocumentSnapshot -> Drink? in
-        return try? queryDocumentSnapshot.data(as: Drink.self)
+      self.drinks = documents.compactMap({ queryDocumentSnapshot -> DrinkTest? in
+        return try? queryDocumentSnapshot.data(as: DrinkTest.self)
       })
     }
   }
@@ -58,8 +63,8 @@ class DrinksListViewModel: ObservableObject {
         return
       }
       
-      self.drinks = documents.compactMap({ queryDocumentSnapshot -> Drink? in
-        return try? queryDocumentSnapshot.data(as: Drink.self)
+      self.drinks = documents.compactMap({ queryDocumentSnapshot -> DrinkTest? in
+        return try? queryDocumentSnapshot.data(as: DrinkTest.self)
       })
     }
   }
@@ -73,8 +78,8 @@ class DrinksListViewModel: ObservableObject {
         return
       }
       
-      self.drinks = documents.compactMap({ queryDocumentSnapshot -> Drink? in
-        return try? queryDocumentSnapshot.data(as: Drink.self)
+      self.drinks = documents.compactMap({ queryDocumentSnapshot -> DrinkTest? in
+        return try? queryDocumentSnapshot.data(as: DrinkTest.self)
       })
     }
   }

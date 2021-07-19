@@ -63,7 +63,7 @@ struct DrinkOneView: View {
         VStack {
           ForEach(drinksVM.drinks) { drink in
             
-            NavigationLink(destination: DrinkOneDetailView(drink: drink)) {
+            NavigationLink(destination: DrinkOneDetailView(drink: drink, city: city)) {
               drinkRowView(drink: drink)
             }
             

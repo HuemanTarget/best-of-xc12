@@ -7,8 +7,9 @@
 
 import SwiftUI
 import Firebase
+import FirebaseFirestoreSwift
 
-class DrinkOneViewModel: ObservableObject {
+class DrinkOneVoteViewModel: ObservableObject {
   let drink: DrinkTest
   let city: City
   let db = Firestore.firestore()
@@ -17,10 +18,10 @@ class DrinkOneViewModel: ObservableObject {
   init(drink: DrinkTest, city: City) {
     self.drink = drink
     self.city = city
-    checkIfUserLikedTweet()
+    checkIfUserVotedDrink()
   }
   
-  func likeTweet() {
+  func voteDrink() {
     guard let uid = AuthViewModel.shared.userSession?.uid else { return }
     let drinkVotesRef = db.collection("\(city.name)").document(city.id).collection("\(city.drink[0])").document(drink.id).collection("drink-votes")
     let userVotesRef = db.collection("users").document(uid).collection("user-votes")
@@ -34,7 +35,7 @@ class DrinkOneViewModel: ObservableObject {
     }
   }
   
-  func unlikeTweet() {
+  func unvoteDrink() {
     guard let uid = AuthViewModel.shared.userSession?.uid else { return }
     let drinkVotesRef = db.collection("\(city.name)").document(city.id).collection("\(city.drink[0])").document(drink.id).collection("drink-votes")
     let userVotesRef = db.collection("users").document(uid).collection("user-votes")
@@ -48,7 +49,7 @@ class DrinkOneViewModel: ObservableObject {
     }
   }
   
-  func checkIfUserLikedTweet() {
+  func checkIfUserVotedDrink() {
     guard let uid = AuthViewModel.shared.userSession?.uid else { return }
     let userVotesRef = db.collection("users").document(uid).collection("user-votes").document(drink.id)
     

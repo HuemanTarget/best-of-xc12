@@ -60,6 +60,7 @@
 		4EA168EF26A5E93B00D025AF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4EA168EE26A5E93B00D025AF /* FirebaseFirestore */; };
 		4EA168F126A5E93B00D025AF /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 4EA168F026A5E93B00D025AF /* FirebaseStorageSwift-Beta */; };
 		4EA168F326A5F82B00D025AF /* DrinkTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA168F226A5F82B00D025AF /* DrinkTest.swift */; };
+		4EA168F526A5F9D000D025AF /* UploadDrinkOneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA168F426A5F9D000D025AF /* UploadDrinkOneViewModel.swift */; };
 		4EC8CF7E268684E300011387 /* DrinkOneDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8CF7D268684E300011387 /* DrinkOneDetailView.swift */; };
 		4EC8CF852686943900011387 /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8CF842686943900011387 /* FoodModel.swift */; };
 		4EC8CF872686945D00011387 /* AttractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8CF862686945D00011387 /* AttractionView.swift */; };
@@ -124,6 +125,7 @@
 		4E9BBA0C267A4651005475CF /* DrinksListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksListViewModel.swift; sourceTree = "<group>"; };
 		4E9BBA0E267A4682005475CF /* DrinkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkModel.swift; sourceTree = "<group>"; };
 		4EA168F226A5F82B00D025AF /* DrinkTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkTest.swift; sourceTree = "<group>"; };
+		4EA168F426A5F9D000D025AF /* UploadDrinkOneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadDrinkOneViewModel.swift; sourceTree = "<group>"; };
 		4EC8CF7D268684E300011387 /* DrinkOneDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkOneDetailView.swift; sourceTree = "<group>"; };
 		4EC8CF842686943900011387 /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
 		4EC8CF862686945D00011387 /* AttractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionView.swift; sourceTree = "<group>"; };
@@ -312,6 +314,7 @@
 				4E9BB9BC26790E7C005475CF /* DrinkOneView.swift */,
 				4E9BB9D726791B46005475CF /* AddDrinkOneView.swift */,
 				4EC8CF7D268684E300011387 /* DrinkOneDetailView.swift */,
+				4EA168F426A5F9D000D025AF /* UploadDrinkOneViewModel.swift */,
 			);
 			path = DrinkOneViews;
 			sourceTree = "<group>";
@@ -563,6 +566,7 @@
 				4EC8CF9E26877B3C00011387 /* AuthViewModel.swift in Sources */,
 				4EC8CF912687748100011387 /* CustomTextField.swift in Sources */,
 				4E9BB9D326791514005475CF /* AttractionThreeView.swift in Sources */,
+				4EA168F526A5F9D000D025AF /* UploadDrinkOneViewModel.swift in Sources */,
 				4E9BB9AF2678F6AE005475CF /* CityView.swift in Sources */,
 				4E9BB9F0267951CA005475CF /* GlowBorder+Extension.swift in Sources */,
 				4E9BB9CF267914C2005475CF /* AttractionOneView.swift in Sources */,

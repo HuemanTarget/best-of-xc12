@@ -6,6 +6,9 @@
 //
 
 import SwiftUI
+import Firebase
+
 
 // DATA
 let cities: [City] = Bundle.main.decode("city.json")
+

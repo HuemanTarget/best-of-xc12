@@ -13,6 +13,7 @@ struct AddDrinkOneView: View {
   let city: City
   let db = Firestore.firestore()
   
+  
   @Environment(\.presentationMode) var presentationMode
   
   @State private var name: String = ""

@@ -11,11 +11,27 @@ import Firebase
 class DrinkImageViewModel: ObservableObject {
   let city: City
   let drink: DrinkTest
+  @Published var photos = [Photo]()
   let db = Firestore.firestore()
   
   init(city: City, drink: DrinkTest) {
     self.city = city
     self.drink = drink
+  }
+  
+  func fetchDrinkOneImages() {
+    let drinkOneImage = db.collection(city.name).document(city.id).collection(city.drink[0]).document(drink.id).collection("drink-images")
+    
+    drinkOneImage.addSnapshotListener { snapshot, error in
+      guard let documents = snapshot?.documents else {
+        print("No Documents")
+        return
+      }
+      
+      self.photos = documents.compactMap({ queryDocumentSnapshot -> Photo? in
+        return try? queryDocumentSnapshot.data(as: Photo.self)
+      })
+    }
   }
   
   func saveDrinkOneImage(image: UIImage) {
@@ -39,6 +55,7 @@ class DrinkImageViewModel: ObservableObject {
         
         let data: [String: Any] = [
                   "id": drinkImagesRef.documentID,
+                  "timestamp": Timestamp(date: Date()),
                   "imageUrl": imageUrl,
                 ]
         

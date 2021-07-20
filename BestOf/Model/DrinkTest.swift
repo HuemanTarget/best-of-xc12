@@ -6,6 +6,7 @@
 //
 
 import Firebase
+import SwiftUI
 
 struct DrinkTest: Identifiable, Decodable {
   let id: String

@@ -18,6 +18,7 @@ struct AddDrinkOneView: View {
   
   @State private var name: String = ""
   @State private var address: String = ""
+  
   @ObservedObject var uploadDrinkOneVM: UploadDrinkOneViewModel
   
   init(city: City) {
@@ -25,14 +26,14 @@ struct AddDrinkOneView: View {
     self.uploadDrinkOneVM = UploadDrinkOneViewModel(city: city)
   }
   
-//  func save(location: String, address: String) {
-//    
-//    do {
-//      let _ = try db.collection("\(city.name)").document(city.id).collection("\(city.drink[0])").addDocument(from: Drink(location: location, address: address))
-//    } catch let error {
-//      print(error)
-//    }
-//  }
+  //  func save(location: String, address: String) {
+  //
+  //    do {
+  //      let _ = try db.collection("\(city.name)").document(city.id).collection("\(city.drink[0])").addDocument(from: Drink(location: location, address: address))
+  //    } catch let error {
+  //      print(error)
+  //    }
+  //  }
   
   var body: some View {
     VStack {
@@ -46,7 +47,7 @@ struct AddDrinkOneView: View {
           Spacer()
           
           Button(action: {
-//            save(location: name, address: address)
+            //            save(location: name, address: address)
             uploadDrinkOneVM.uploadDrinkOne(location: name, address: address)
             presentationMode.wrappedValue.dismiss()
           }) {
@@ -59,6 +60,7 @@ struct AddDrinkOneView: View {
     }
   }
 }
+
 
 //struct AddDrinkOneView_Previews: PreviewProvider {
 //  static var previews: some View {

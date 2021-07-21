@@ -54,13 +54,17 @@ struct DrinkOneDetailView: View {
 
     TabView {
       ForEach(drinkImageVM.photos, id: \.id) { photo in
-        VStack {
-          KFImage(URL(string: photo.imageUrl))
-            .resizable()
-            .scaledToFill()
-            .frame(width: 200, height: 200)
-            .foregroundColor(.black)
-        }
+        AsyncImage(url: URL(string: photo.imageUrl)!, placeholder: {Text("Loading...")}, image: { image in
+          Image(uiImage: image).resizable()
+        }).aspectRatio(contentMode: .fit)
+        .frame(width: 300)
+//        VStack {
+//          KFImage(URL(string: photo.imageUrl))
+//            .resizable()
+//            .scaledToFill()
+//            .frame(width: 200, height: 200)
+//            .foregroundColor(.black)
+//        }
       }
     }
     .onAppear() {

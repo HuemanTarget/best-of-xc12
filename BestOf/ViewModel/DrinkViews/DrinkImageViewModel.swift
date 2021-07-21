@@ -20,7 +20,7 @@ class DrinkImageViewModel: ObservableObject {
   }
   
   func fetchDrinkOneImages() {
-    let drinkOneImage = db.collection(city.name).document(city.id).collection(city.drink[0]).document(drink.id).collection("drink-images")
+    let drinkOneImage = db.collection(city.name).document(city.id).collection(city.drink[0]).document(drink.id).collection("drink-images").order(by: "timestamp", descending: true)
     
 //    drinkOneImage.getDocuments { (snapshot, error) in
 //      guard let snapshot = snapshot, error == nil else {

@@ -76,9 +76,13 @@ struct DrinkOneDetailView: View {
     //        .font(.system(size: 25, weight: .bold))
     //
     VStack {
+      let drinkLocation = drink.location
+      let urlLocation:String = drinkLocation.replacingOccurrences(of: " ", with: "+")
+      
       Text(drink.location)
         .font(.system(size: 25, weight: .semibold))
-      Text(drink.address)
+//      Text(drink.address)
+      Link("\(drink.address)", destination: (URL(string: "http://maps.apple.com/?q=\(urlLocation)") ?? URL(string: "http://maps.apple.com/?q=Disneyland"))!)
         .font(.system(size: 15))
         .frame(width: 300)
         .multilineTextAlignment(.center)

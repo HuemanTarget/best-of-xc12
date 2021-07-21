@@ -13,7 +13,7 @@ struct AddDrinkOneView: View {
   let city: City
   let db = Firestore.firestore()
   
-  
+  @ObservedObject var locationSearchService: LocationSearchService
   @Environment(\.presentationMode) var presentationMode
   
   @State private var name: String = ""
@@ -24,6 +24,7 @@ struct AddDrinkOneView: View {
   init(city: City) {
     self.city = city
     self.uploadDrinkOneVM = UploadDrinkOneViewModel(city: city)
+    self.locationSearchService = LocationSearchService()
   }
   
   //  func save(location: String, address: String) {
@@ -36,6 +37,29 @@ struct AddDrinkOneView: View {
   //  }
   
   var body: some View {
+    VStack {
+      SearchBar(text: $locationSearchService.searchQuery)
+      if locationSearchService.searchQuery.isEmpty {
+        List {
+          Text("No Search Blah")
+        }
+      } else {
+        List(locationSearchService.completions) { completion in
+          Button(action: {
+            name = completion.title
+            address = completion.subtitle
+            
+          }) {
+            VStack(alignment: .leading) {
+              Text(completion.title)
+              Text(completion.subtitle)
+                .font(.subheadline)
+                .foregroundColor(.gray)
+            }
+          }
+        }
+    }
+    
     VStack {
       Form {
         TextField("Location Name", text: $name)
@@ -60,7 +84,7 @@ struct AddDrinkOneView: View {
     }
   }
 }
-
+}
 
 //struct AddDrinkOneView_Previews: PreviewProvider {
 //  static var previews: some View {

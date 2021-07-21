@@ -79,8 +79,11 @@ struct DrinkOneDetailView: View {
       Text(drink.location)
         .font(.system(size: 25, weight: .semibold))
       Text(drink.address)
-        .font(.system(size: 25, weight: .semibold))
+        .font(.system(size: 15))
+        .frame(width: 300)
+        .multilineTextAlignment(.center)
       Text("Submitted by: \(drink.username)")
+        .font(.system(size: 10))
     }
     
     VStack {
@@ -92,7 +95,7 @@ struct DrinkOneDetailView: View {
     
     Button(action: {
       drinkOneVoteVM.didVote ? drinkOneVoteVM.unvoteDrink() : drinkOneVoteVM.voteDrink()
-      drinkOneVoteVM.checkIfUserVotedDrink()
+//      drinkOneVoteVM.checkIfUserVotedDrink()
     }) {
       if drinkOneVoteVM.didVote {
         Text("Unvote")

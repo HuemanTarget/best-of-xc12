@@ -184,6 +184,7 @@
 		4E9BB98D2678EA9B005475CF /* BestOf */ = {
 			isa = PBXGroup;
 			children = (
+				4EA168FF26A8AA5800D025AF /* AsyncImages */,
 				4E9BB9A72678F322005475CF /* Utility */,
 				4E9BB9A22678ED7B005475CF /* Extension */,
 				4E9BB99F2678EBBD005475CF /* App */,
@@ -316,6 +317,13 @@
 				4EC8CF8E26869D0900011387 /* AttractionListViewModel.swift */,
 			);
 			path = AttractionViews;
+			sourceTree = "<group>";
+		};
+		4EA168FF26A8AA5800D025AF /* AsyncImages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AsyncImages;
 			sourceTree = "<group>";
 		};
 		4EC8CF792686842200011387 /* DrinkOneViews */ = {

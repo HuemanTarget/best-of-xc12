@@ -22,12 +22,33 @@ class DrinkImageViewModel: ObservableObject {
   func fetchDrinkOneImages() {
     let drinkOneImage = db.collection(city.name).document(city.id).collection(city.drink[0]).document(drink.id).collection("drink-images")
     
+//    drinkOneImage.getDocuments { (snapshot, error) in
+//      guard let snapshot = snapshot, error == nil else {
+////        handle error
+//        return
+//      }
+//      
+//      print("Number of documents: \(snapshot.documents.count)")
+//
+//      self.photos = snapshot.documents.compactMap({ documentSnapshot -> Photo? in
+//        let documentData = documentSnapshot.data()
+//        if let url = documentData["imageUrl"] as? String {
+//          return Photo(dictionary: [
+//            "imageUrl": url
+//          ])
+//        } else {
+//          return nil
+//        }
+//      })
+//
+//    }
     drinkOneImage.addSnapshotListener { snapshot, error in
       guard let documents = snapshot?.documents else {
         print("No Documents")
         return
       }
-      
+
+
       self.photos = documents.compactMap({ queryDocumentSnapshot -> Photo? in
         return try? queryDocumentSnapshot.data(as: Photo.self)
       })

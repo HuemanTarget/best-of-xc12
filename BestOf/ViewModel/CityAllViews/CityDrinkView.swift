@@ -48,8 +48,8 @@ struct CityDrinkView: View {
   }
 }
 
-struct CityDrinkView_Previews: PreviewProvider {
-  static var previews: some View {
-    CityDrinkView(city: cities[0])
-  }
-}
+//struct CityDrinkView_Previews: PreviewProvider {
+//  static var previews: some View {
+//    CityDrinkView(city: cities[0])
+//  }
+//}

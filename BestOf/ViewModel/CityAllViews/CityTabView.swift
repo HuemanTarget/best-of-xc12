@@ -32,8 +32,8 @@ struct CityTabView: View {
   }
 }
 
-struct CityTabView_Previews: PreviewProvider {
-  static var previews: some View {
-    CityTabView(city: cities[0])
-  }
-}
+//struct CityTabView_Previews: PreviewProvider {
+//  static var previews: some View {
+//    CityTabView(city: cities[0])
+//  }
+//}

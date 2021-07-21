@@ -51,18 +51,22 @@ struct DrinkOneDetailView: View {
     .sheet(isPresented: $showImagePicker, onDismiss: loadImage, content: {
       ImagePicker(image: $selectedUIImage)
     })
-    
-    ForEach(drinkImageVM.photos) { photo in
-      KFImage(URL(string: photo.imageUrl))
-        .resizable()
-        .renderingMode(.template)
-        .scaledToFill()
-        .frame(width: 50, height: 50)
-        .foregroundColor(.black)
+
+    TabView {
+      ForEach(drinkImageVM.photos, id: \.id) { photo in
+        VStack {
+          KFImage(URL(string: photo.imageUrl))
+            .resizable()
+            .scaledToFill()
+            .frame(width: 200, height: 200)
+            .foregroundColor(.black)
+        }
+      }
     }
     .onAppear() {
       self.drinkImageVM.fetchDrinkOneImages()
     }
+    .tabViewStyle(PageTabViewStyle())
     
     //      Text("\(city.name) - \(city.drink[0])")
     //        .font(.system(size: 25, weight: .bold))

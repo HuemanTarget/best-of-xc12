@@ -33,6 +33,7 @@ class DrinkOneVoteViewModel: ObservableObject {
         }
       }
     }
+
   }
   
   func unvoteDrink() {
@@ -47,6 +48,7 @@ class DrinkOneVoteViewModel: ObservableObject {
         }
       }
     }
+    
   }
   
   func checkIfUserVotedDrink() {

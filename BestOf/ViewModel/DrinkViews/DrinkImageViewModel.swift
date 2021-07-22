@@ -17,6 +17,7 @@ class DrinkImageViewModel: ObservableObject {
   init(city: City, drink: DrinkTest) {
     self.city = city
     self.drink = drink
+    fetchDrinkOneImages()
   }
   
   func fetchDrinkOneImages() {
@@ -62,7 +63,7 @@ class DrinkImageViewModel: ObservableObject {
     let filename = "\(city.drink[0])\(randomInt)"
 //    let storageRef = Storage.storage().reference().child(city.id).child(city.drink[0]).child(filename)
     let storageRef = Storage.storage().reference().child(filename)
-    let drinkImagesRef = db.collection("\(city.name)").document(city.id).collection("\(city.drink[0])").document(drink.id).collection("drink-images").document()
+    let drinkImagesRef = db.collection("\(city.name)").document(city.id).collection("\(city.drink[0])").document(drink.id).collection("drink-images")
     
     storageRef.putData(imageData, metadata: nil) { _, error in
       if let error = error {
@@ -75,12 +76,15 @@ class DrinkImageViewModel: ObservableObject {
         
         
         let data: [String: Any] = [
-                  "id": drinkImagesRef.documentID,
+//                  "id": drinkImagesRef.documentID,
                   "timestamp": Timestamp(date: Date()),
                   "imageUrl": imageUrl,
                 ]
         
-        drinkImagesRef.setData(data) { _ in
+//        drinkImagesRef.setData(data) { _ in
+//          self.fetchDrinkOneImages()
+//        }
+        drinkImagesRef.addDocument(data: data) { _ in
           
         }
         
